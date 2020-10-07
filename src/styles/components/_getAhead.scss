@@ -1,0 +1,92 @@
+
+section.getahead {
+    height: 883px;
+    position: relative;
+
+    > img {
+        position: absolute;
+        top: -53px;
+    }
+
+    div.gacont {
+        height: 255px;
+        max-width: 450px;
+        min-width: 380px;
+        padding: 135px 0 0 720px;
+    }
+}
+
+div.gadata {
+    height: 318px;
+    padding-top: 175px;
+    width: 100%;
+
+    h4 {
+        font-size: 24px;
+        line-height: 43px;
+        color: $blue1;
+        margin-bottom: 15px;
+    }
+}
+
+div.cells {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.unit {
+    border: 1px solid #C6C9D2;
+    border-radius: 6px;
+    width: 243px;
+}
+
+div.cell {
+    align-items: center;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr;
+    height: 130px;
+}
+
+div.cell-img {
+    display: grid;
+    justify-items: center;
+}
+div.cell-info {
+    display: grid;
+
+    span {
+        color: $blue1;
+    }
+
+    span:first-child {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    span:last-child {
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+}
+
+div.under-0, div.under-1, div.under-2, div.under-3 {
+    border-radius: 0px 0px 6px 6px;
+    height: 9px;
+}
+
+div.under-0 {
+    background: $blue2;
+}
+
+div.under-1 {
+    background: $blue3;
+}
+
+div.under-2 {
+    background: $blue4;
+}
+
+div.under-3 {
+    background: $blue5;
+}

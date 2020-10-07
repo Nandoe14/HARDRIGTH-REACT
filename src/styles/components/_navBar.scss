@@ -1,0 +1,81 @@
+
+section.navbar {
+    background-color: transparent;
+    height: 80px;
+    max-width: 1440px;
+    position: fixed;
+    top: 32px;
+    width: 100%;
+    z-index: 1;
+
+
+display: none;
+
+
+
+    div {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        height: inherit;
+    }
+
+    nav {
+        height: inherit;
+        width: 65%;
+    }
+    
+    ul {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        height: inherit;
+    }
+    
+    li {
+        font-size: 16px;
+        height: 40px;
+        list-style: none;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    
+    a {
+        align-items: center;
+        color: $white;
+        display: flex;
+        height: inherit;
+        text-decoration: none;
+        vertical-align: middle;
+    
+        transition: color 0.2s ease;
+    
+        &:hover {
+            color: rgb(138, 138, 230);
+        }
+    }
+    
+    button {
+        background-color: transparent;
+        border: 1px solid $white;
+        border-radius: 6px;
+        color: $white;
+        height: 40px;
+        text-transform: capitalize;
+        width: 140px;
+    
+        transition: all 0.2s ease;
+    
+        &:hover {
+            border: 1px solid rgb(138, 138, 230);
+            border-radius: unset;
+            color: rgb(138, 138, 230);
+        }
+    
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+

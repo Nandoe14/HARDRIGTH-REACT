@@ -4,6 +4,7 @@ import house from './../../assets/home.svg';
 import row from './../../assets/row.svg';
 import search from './../../assets/search_icon.svg';
 import { IndustryElement } from './IndustryElement';
+import { InputIndustry } from './InputIndustry';
 
 export const SeeWhere = () => {
 
@@ -22,14 +23,12 @@ export const SeeWhere = () => {
         itemShowed: true
     })
 
-    const [formValues, handleInputChange, reset] = useFormWithFilter({
+    const [{ isearch }, handleInputChange, reset] = useFormWithFilter({
         isearch: '',
         contIndustry: 6
     })
 
     const { select, showed } = state
-
-    const { isearch, contIndustry } = formValues
 
     const visualChanges = () => {
         document.querySelector('.select-plegable').classList.toggle("show-select")
@@ -45,10 +44,6 @@ export const SeeWhere = () => {
             showed: !showed
         })
         reset()
-    }
-
-    const handleSubmit = (e) => {
-        e.preventDefault()
     }
 
     return (
@@ -71,16 +66,11 @@ export const SeeWhere = () => {
                     <div className="select-plegable">
                         <div className="selectlist">
                             <div>
-                                <form onSubmit={handleSubmit}>
-                                    <input
-                                        type="text"
-                                        name="isearch"
-                                        placeholder="Search"
-                                        autoComplete="off"
-                                        value={isearch}
-                                        onChange={handleInputChange}
-                                    />
-                                </form>
+                                <InputIndustry
+                                    isearch={isearch}
+                                    handleInputChange={handleInputChange}
+                                    handleSubmit={handleSubmit}
+                                />
                                 <img src={search} alt="search" />
                             </div>
                         </div>

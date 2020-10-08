@@ -32,7 +32,6 @@ export const useFormWithFilter = (initialState = {}) => {
 
         setvalues({
             ...values,
-            contIndustry: contIndustry2,
             [target.name]: target.value,
         })
     }

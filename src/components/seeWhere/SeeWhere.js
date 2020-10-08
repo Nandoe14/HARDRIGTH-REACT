@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useForm } from '../../hooks/useForm';
 import house from './../../assets/home.svg';
 import row from './../../assets/row.svg';
 import search from './../../assets/search_icon.svg';
@@ -20,6 +21,10 @@ export const SeeWhere = () => {
         showed: false
     })
 
+    const [{ isearch }, handleInputChange] = useForm({
+        isearch: ''
+    })
+
     const { select, showed } = state
 
     const visualChanges = () => {
@@ -29,12 +34,15 @@ export const SeeWhere = () => {
     }
 
     const handleClickIndustry = () => {
-        console.log('Me disparé :(')
         visualChanges()
         setState({
             ...state,
             showed: !showed
         })
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
     }
 
     return (
@@ -57,7 +65,15 @@ export const SeeWhere = () => {
                     <div className="select-plegable">
                         <div className="selectlist">
                             <div>
-                                <input type="text" placeholder="Search" />
+                                <form onSubmit={handleSubmit}>
+                                    <input
+                                        type="text"
+                                        name="isearch"
+                                        placeholder="Search"
+                                        value={isearch}
+                                        onChange={handleInputChange}
+                                    />
+                                </form>
                                 <img src={search} alt="search" />
                             </div>
                         </div>

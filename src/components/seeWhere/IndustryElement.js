@@ -3,7 +3,7 @@ import React from 'react'
 export const IndustryElement = ({ industry, setState, visualChanges }) => {
 
     const handleClickTypeIndustry = (industry) => {
-        console.log('industry: ' + industry)
+        document.querySelector('.divselect').classList.add("select-selected")
         setState(state => ({
             ...state,
             select: industry

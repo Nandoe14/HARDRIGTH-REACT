@@ -1,6 +1,123 @@
 
 section.seewhere {
     background-color: $white3;
-    height: 534px;
+    height: 404px;
+    padding-top: 130px;
+
+    h2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .p2 {
+        margin-bottom: 27px;
+    }
+    
+    > div > span {
+        font-size: 14px;
+        line-height: 32px;
+        display: inline-block;
+        text-transform: capitalize;
+        color: $blue1;
+        margin: 0 0 5px 80px;
+    }
 }
 
+div.industry-select {
+    align-items: center;
+    background: $white;
+    border: 1px solid $white2;
+    border-radius: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 55px 1fr 44px;
+    height: 50px;
+    margin: auto;
+    position: relative;
+    width: 531px;
+}
+
+div.divhouse, div.divrow {
+    display: grid;
+    justify-content: center;
+}
+
+div.divselect {
+    color: $white2;
+    font-size: 14px;
+}
+
+div.divrow img {
+    transform: rotateZ(-90deg);
+    transition: transform 0.3s linear;
+}
+
+div.select-plegable {
+    background-color: $white;
+    height: 0;
+    left: -1px;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 49px;
+    width: 531px;
+    z-index: 1;
+
+    transition: height 0.5s ease;
+}
+
+div.selectlist {
+    align-items: center;
+    border: 1px solid $white2;
+    border-top: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: grid;
+    height: 50px;
+    padding-left: 55px;
+
+    &:hover {
+        box-shadow: inset 0px 0px 71px -28px rgba(0,0,0,0.13);
+    }
+}
+
+div.selectlist input {
+    border: unset;
+    font-size: 14px;
+    padding: 10px;
+    width: 200px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+div.selectlist:first-child {
+    padding-left: 45px;
+}
+
+div.selectlist:first-child > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.selectlist:first-child > div > img {
+    padding: 4px 15px 0 0;
+}
+
+
+// toggle classes
+
+div.show-select {
+    height: 350px!important;
+}
+
+img.row-rotate-select {
+    transform: rotateZ(0deg)!important;
+}
+
+div.border-select {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}

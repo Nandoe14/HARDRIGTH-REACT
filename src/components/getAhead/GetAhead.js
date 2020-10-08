@@ -20,7 +20,7 @@ export const GetAhead = () => {
 
                     {
                         cantCells.map((unit) =>
-                            <GetAheadItem i={unit} />
+                            <GetAheadItem key={unit} i={unit} />
                         )
                     }
 

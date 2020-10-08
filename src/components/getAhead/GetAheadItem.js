@@ -11,7 +11,7 @@ export const GetAheadItem = ({ i }) => {
     const classArray = ['tickets', 'customers', 'agents', 'customers']
 
     return (
-        <div class="unit">
+        <div className="unit">
             <div className="cell">
                 <div className="cell-img">
                     <img src={imgsArray[i]} alt="Tickets" />

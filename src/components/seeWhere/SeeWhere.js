@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useForm } from '../../hooks/useForm';
+import { useFormWithFilter } from '../../hooks/useFormWithFilter';
 import house from './../../assets/home.svg';
 import row from './../../assets/row.svg';
 import search from './../../assets/search_icon.svg';
@@ -18,19 +18,24 @@ export const SeeWhere = () => {
 
     const [state, setState] = useState({
         select: 'Select',
-        showed: false
+        showed: false,
+        itemShowed: true
     })
 
-    const [{ isearch }, handleInputChange] = useForm({
-        isearch: ''
+    const [formValues, handleInputChange, reset] = useFormWithFilter({
+        isearch: '',
+        contIndustry: 6
     })
 
     const { select, showed } = state
+
+    const { isearch, contIndustry } = formValues
 
     const visualChanges = () => {
         document.querySelector('.select-plegable').classList.toggle("show-select")
         document.querySelector('#rowselect').classList.toggle("row-rotate-select")
         document.querySelector('.industry-select').classList.toggle("border-select")
+        document.querySelector('.select-plegable').removeAttribute("style")
     }
 
     const handleClickIndustry = () => {
@@ -39,6 +44,7 @@ export const SeeWhere = () => {
             ...state,
             showed: !showed
         })
+        reset()
     }
 
     const handleSubmit = (e) => {
@@ -70,6 +76,7 @@ export const SeeWhere = () => {
                                         type="text"
                                         name="isearch"
                                         placeholder="Search"
+                                        autoComplete="off"
                                         value={isearch}
                                         onChange={handleInputChange}
                                     />
@@ -82,6 +89,7 @@ export const SeeWhere = () => {
                                 (<IndustryElement
                                     key={ind}
                                     industry={ind}
+                                    state={state}
                                     setState={setState}
                                     visualChanges={visualChanges}
                                 />)

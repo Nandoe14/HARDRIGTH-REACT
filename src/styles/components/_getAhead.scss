@@ -37,7 +37,14 @@ div.cells {
 div.unit {
     border: 1px solid #C6C9D2;
     border-radius: 6px;
+    cursor: default;
     width: 243px;
+
+    transition: transform 0.8s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 div.cell {

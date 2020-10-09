@@ -17,7 +17,7 @@ export const SeeWhereVideo = () => {
             <div className="videosw">
                 <img
                     src={playVideo}
-                    alt="Video Image"
+                    alt="Video"
                     onClick={handleClickToggleVideo}
                 />
             </div>
@@ -28,7 +28,7 @@ export const SeeWhereVideo = () => {
                     <div>
                         <div className="contdivvideo">
                             <img src={closeVideo} alt="X" />
-                            <iframe id="videoiframe" src="https://player.vimeo.com/video/95746815" width="1069" height="601" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            <iframe className="animate__animated animate__backInDown" id="videoiframe" src="https://player.vimeo.com/video/95746815" width="1069" height="601" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="Video"></iframe>
                         </div>
                     </div>
                 </div>)

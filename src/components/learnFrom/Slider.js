@@ -46,6 +46,8 @@ export const Slider = () => {
                     cards[counter - 1].classList.toggle("slide-selected")
                 }
                 break;
+            default:
+                break;
         }
     }
 

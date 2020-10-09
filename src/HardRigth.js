@@ -1,4 +1,6 @@
 import React from 'react'
+import { ContactUs } from './components/contactUs/ContactUs'
+import { Footer } from './components/footer/Footer'
 import { GetAhead } from './components/getAhead/GetAhead'
 import { Header } from './components/header/Header'
 import { LearnFrom } from './components/learnFrom/LearnFrom'
@@ -15,6 +17,8 @@ export const HardRigth = () => {
             <SeeWhere />
             <LearnFrom />
             <SeeWhereVideo />
+            <ContactUs />
+            <Footer />
         </>
     )
 }

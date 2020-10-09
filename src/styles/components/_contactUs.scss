@@ -1,0 +1,212 @@
+section.contactus {
+    background-color: $white3;
+    background-image: url('../../assets/map.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 1124px;
+}
+
+.location {
+    height: 174px;
+    margin: auto;
+    padding-top: 82px;
+    position: relative;
+    width: 345px;
+
+    > img {
+        cursor: pointer;
+        left: 157px;
+        position: absolute;
+        top: 186px;
+    }
+}
+
+.fields {
+    background-color: $white3;
+    border-radius: 6px;
+    box-shadow: 0px 17px 50px rgba(224, 224, 228, 0.656605);
+    color: $blue1;
+    height: 88px;
+    margin-bottom: 15px;
+    position: relative;
+    width: 345px;
+    
+    > img {
+        float: left;
+        margin: 27px;
+    }
+
+    > span:first-of-type {
+        float: left;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.2px;
+        margin: 16px 0 4px 0;
+        text-transform: uppercase;
+        width: 250px;
+    }
+
+    > span:last-of-type {
+        font-size: 14px;
+        letter-spacing: 0.2px;
+    }
+}
+
+.triangulo {
+    border-color: $white3 transparent transparent transparent;
+    border-style: solid;
+    border-width: 13px 7px 0 7px;
+    left: 165px;
+    height: 0;
+    position: absolute;
+    top: 87px;
+    width: 0;
+}
+
+.popuph:hover {
+    transform: scale(1.1);
+}
+
+.popuph:active {
+    transform: scale(0.8);
+}
+
+
+/* Formulario Contact Us */
+
+#contact {
+    background: $white;
+    border: 1px solid rgba(198, 201, 210, 0.387183);
+    border-radius: 6px;
+    box-shadow: 0px 4px 30px $white2;
+    height: 738px;
+    margin: auto;
+    width: 701px;
+}
+
+#contact > div {
+    margin: auto;
+    width: 582px;
+}
+
+#contact h2 {
+    padding: 44px 0 10px 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#contact > div > span {
+    color: $blue1;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+#contact input[type="text"], #contact input[type="tel"] {
+    color: #82858E;
+    border: none;
+    font-size: 16px;
+    height: 28px;
+    line-height: 28px;
+    letter-spacing: 0.494018px;
+    margin: 36px 0 10px 0;
+    opacity: 0.8;
+    width: 100%;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+#contact hr {
+    margin: 1px 0 1px 0;
+    opacity: 0.3;
+}
+
+#contact form span {
+    color: $blue1;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.494018px;
+    padding: 32px 0 21px 0;
+}
+
+#contact input[type="radio"] {
+    font-size: 16px;
+    height: 26px;
+    line-height: 28px;
+    margin-right: 13px;
+    opacity: 0.4;
+    width: 26px;
+}
+
+#contact label {
+    color: #313E5A;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 0.494018px;
+    line-height: 28px;
+    padding-bottom: 20px;
+    vertical-align: middle;
+}
+
+#contact label:first-of-type {
+    padding-right: 43px;
+}
+
+#contact input[name="message"] {
+    margin-top: 20px !important;
+}
+
+#contact hr:last-of-type {
+    margin-bottom: 83px;
+}
+
+button.general {
+    height: 50px;
+    width: 582px;
+}
+
+
+/* Animacion botón popup */
+
+.popup {
+    -webkit-animation: popups 2.5s linear infinite forwards;
+            animation: popups 2.5s linear infinite forwards;
+}
+
+@-webkit-keyframes popups {
+    0% {
+        transform: scale(0.5);
+        opacity: 1;
+    }
+    
+    40% {
+        transform: scale(2);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes popups {
+    0% {
+        transform: scale(0.5);
+        opacity: 1;
+    }
+    
+    40% {
+        transform: scale(2);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}

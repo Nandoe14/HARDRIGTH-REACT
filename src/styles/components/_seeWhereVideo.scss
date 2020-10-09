@@ -1,6 +1,6 @@
 section.seewherevideo {
-    height: 912px;
     background-color: $white;
+    height: 912px;
     
     h2 {
         margin-bottom: 20px;
@@ -10,6 +10,71 @@ section.seewherevideo {
     
     .p2 {
         margin-bottom: 70px;
+    }
+}
+
+.videosw {
+    align-items: center;
+    background-image: url('../../assets/video.jpg');
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+    height: 496px;
+    margin: auto;
+    width: 1067px;
+
+    img {
+        cursor: pointer;
+
+        transition: all 0.2s ease;
+
+        &:hover {
+            -webkit-filter: contrast(2);
+                    filter: contrast(2);
+        }
+    
+        &:active {
+            transform: scale(0.9);
+        }
+    }
+}
+
+.videout {
+    background-color:rgba(68, 68, 68, 0.493717);
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+
+    > div {
+        align-items: center;
+        display: grid;
+        height: 100%;
+        margin: auto;
+        width: 1069px;
+    }
+}
+
+.contdivvideo {
+    height: 601px;
+    position: relative;
+    width: 1069px;
+
+    img {
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: -24px;
+    
+        &:hover {
+            transform: scale(1.1);
+        }
+    
+        &:active {
+            transform: scale(0.9);
+        }
     }
 }
 

@@ -69,7 +69,6 @@ export const SeeWhere = () => {
                                 <InputIndustry
                                     isearch={isearch}
                                     handleInputChange={handleInputChange}
-                                    handleSubmit={handleSubmit}
                                 />
                                 <img src={search} alt="search" />
                             </div>

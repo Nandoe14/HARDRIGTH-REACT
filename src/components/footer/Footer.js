@@ -1,15 +1,61 @@
 import React from 'react'
+import { Button } from '../buttons/Button'
+import { FooterTableList } from './FooterTableList'
+import logoFooter from '../../assets/Group_12.svg';
+import facebookIcon from '../../assets/Facebook.svg';
+import twitterIcon from '../../assets/twitter.svg';
+import youtubeIcon from '../../assets/Youtube.svg';
+import pinteresIcon from '../../assets/Pinteres.svg';
+import linkedinIcon from '../../assets/In.svg';
 
 export const Footer = () => {
 
-    const tableTitles = ['Products', 'Pricing', 'Solutions', 'Demo', 'Services']
-    const tableLinea1 = ['Enterprice', 'Premier Pro', 'Careers', 'Support', 'Pricing']
-    const tableLinea2 = ['Developers', 'After Effects', 'Blog', 'Contact Us', 'Customers']
-    const tableLinea3 = ['iPhone App', 'Final Cut Pro', 'Swag Store', 'Status Page', 'Sla']
+    const cantListArray = [0, 1, 2, 3, 4]
 
     return (
         <footer>
+            <div className="container1">
+                <hr />
+                <div className="cont-table-auth">
+                    <div className="footer-table">
+                        {
+                            cantListArray.map(und =>
+                                <FooterTableList i={und} />)
+                        }
+                    </div>
+                    <div className="footer-auth">
+                        <div>
+                            <span className="login">Login</span>
+                            <Button content="get started" />
+                        </div>
+                    </div>
+                </div>
 
-        </footer>
+                <img className="logoi" src={logoFooter} alt="Logo" />
+
+                <div className="foot">
+                    <div className="legals-cont">
+                        <div>
+                            <span><a href="#">HardRigth.io, Inc.</a></span>
+                            <span><a href="#">Terms</a></span>
+                            <span><a href="#">Privacy</a></span>
+                        </div>
+                    </div>
+                    <div className="social-cont">
+                        <div>
+                            <div className="social">
+                                <a href="https://www.facebook.com/" target="_blank"><img src={facebookIcon} alt="Facebook" /></a>
+                                <a href="https://twitter.com/" target="_blank"><img src={twitterIcon} alt="Twitter" /></a>
+                                <a href="https://www.youtube.com/" target="_blank"><img src={youtubeIcon} alt="Youtube" /></a>
+                                <a href="https://pinterest.com/" target="_blank"><img src={pinteresIcon} alt="Pinteres" /></a>
+                                <a href="https://www.linkedin.com/" target="_blank"><img src={linkedinIcon} alt="Linkedin" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </footer >
     )
 }

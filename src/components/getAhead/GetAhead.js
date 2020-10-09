@@ -1,5 +1,5 @@
 import React from 'react'
-import imgWoman from './../../assets/room-GkWrEPTyDRs-unsplash.png';
+import imgWoman from '../../assets/room-GkWrEPTyDRs-unsplash.png';
 import { GetAheadItem } from './GetAheadItem';
 
 export const GetAhead = () => {

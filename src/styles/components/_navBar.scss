@@ -8,11 +8,6 @@ section.navbar {
     width: 100%;
     z-index: 1;
 
-
-display: none;
-
-
-
     div {
         align-items: center;
         display: flex;
@@ -78,4 +73,20 @@ display: none;
     }
 }
 
+
+// Toggle classes
+
+.changes-nav-bar {
+    background-color: $white!important;
+    top: 0!important;
+}
+
+.changes-text-nav-bar {
+    color: $blue1!important;
+}
+
+.changes-button-nav-bar {
+    border-color: $blue2!important;
+    color: $blue2!important;
+}
 

@@ -20,7 +20,7 @@ export const Footer = () => {
                     <div className="footer-table">
                         {
                             cantListArray.map(und =>
-                                <FooterTableList i={und} />)
+                                <FooterTableList key={und} i={und} />)
                         }
                     </div>
                     <div className="footer-auth">
@@ -36,19 +36,19 @@ export const Footer = () => {
                 <div className="foot">
                     <div className="legals-cont">
                         <div>
-                            <span><a href="#">HardRigth.io, Inc.</a></span>
-                            <span><a href="#">Terms</a></span>
-                            <span><a href="#">Privacy</a></span>
+                            <span><a href="#a">HardRigth.io, Inc.</a></span>
+                            <span><a href="#a">Terms</a></span>
+                            <span><a href="#a">Privacy</a></span>
                         </div>
                     </div>
                     <div className="social-cont">
                         <div>
                             <div className="social">
-                                <a href="https://www.facebook.com/" target="_blank"><img src={facebookIcon} alt="Facebook" /></a>
-                                <a href="https://twitter.com/" target="_blank"><img src={twitterIcon} alt="Twitter" /></a>
-                                <a href="https://www.youtube.com/" target="_blank"><img src={youtubeIcon} alt="Youtube" /></a>
-                                <a href="https://pinterest.com/" target="_blank"><img src={pinteresIcon} alt="Pinteres" /></a>
-                                <a href="https://www.linkedin.com/" target="_blank"><img src={linkedinIcon} alt="Linkedin" /></a>
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src={facebookIcon} alt="Facebook" /></a>
+                                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src={twitterIcon} alt="Twitter" /></a>
+                                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img src={youtubeIcon} alt="Youtube" /></a>
+                                <a href="https://pinterest.com/" target="_blank" rel="noopener noreferrer"><img src={pinteresIcon} alt="Pinteres" /></a>
+                                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><img src={linkedinIcon} alt="Linkedin" /></a>
                             </div>
                         </div>
                     </div>

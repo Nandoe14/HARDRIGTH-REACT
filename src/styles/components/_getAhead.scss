@@ -3,6 +3,12 @@ section.getahead {
     height: 883px;
     position: relative;
 
+    h2 {
+        width: 260px;
+        height: 90px;
+        margin-bottom: 20px;
+    }
+
     > img {
         position: absolute;
         top: -53px;
@@ -11,15 +17,14 @@ section.getahead {
     div.gacont {
         height: 255px;
         max-width: 450px;
-        min-width: 380px;
-        padding: 135px 0 0 720px;
+        min-width: 283px;
+        padding: 135px 10px 0 720px;
     }
 }
 
 div.gadata {
     height: 318px;
     padding-top: 175px;
-    width: 100%;
 
     h4 {
         font-size: 24px;
@@ -45,6 +50,10 @@ div.unit {
     &:hover {
         transform: scale(1.1);
     }
+}
+
+div.unit:nth-child(-n+3) {
+    margin-right: 5px;
 }
 
 div.cell {
@@ -96,4 +105,88 @@ div.under-2 {
 
 div.under-3 {
     background: $blue5;
+}
+
+@media (max-width: 1012px) {
+
+    section.getahead {
+        height: 1060px;
+
+        div.gacont {
+            margin: auto;
+            padding: 478px 0 0 0;
+            text-align: center;
+            width: 507px;
+            
+            h2 {
+                width: unset;
+                height: 48px;
+                margin: 0 auto 20px auto;   
+            }
+        }
+    }
+
+    div.gadata {
+        height: 318px;
+        padding-top: 0;
+    }
+}
+
+
+/* Estilos dispositivos Res: 320px - 768px */
+
+@media (max-width: 768px) {
+
+    section.getahead {
+        height: 1266px;
+
+        > img {
+            height: 488px;
+            left: 66px;
+            position: absolute;
+            top: -70px;
+            width: 636px;
+        }
+
+        div.gacont {
+            margin: auto;
+            padding: 478px 0 0 0;
+            text-align: center;
+            width: 507px;
+            
+            h2 {
+                width: unset;
+                height: 48px;
+                margin: 0 auto 20px auto;   
+            }
+        }
+    }
+
+    div.gadata {
+        height: 448px;
+        padding-top: 5px;
+        margin: auto;
+        width: 636px;
+    }
+
+    div.cells {
+        flex-wrap: wrap;
+    }
+
+    div.unit {
+        width: 298px;
+
+        &:nth-child(-n+2) {
+            margin-bottom: 60px;
+        }
+
+        &:nth-child(-n+3) {
+            margin-right: 0;
+        }
+    }
+
+    .under-0, .under-1, .under-2, .under-3  {
+        height: 18px;
+    }
+
 }

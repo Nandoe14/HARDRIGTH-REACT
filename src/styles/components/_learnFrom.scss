@@ -44,11 +44,6 @@ section.learnfrom {
     transform: scale(1);
 }
 
-// .slide .r1:first-child {
-//     box-shadow: 0px 2px 20px $white2;
-//     transform: scale(1.02);
-// }
-
 .slide h3 {
     color: $blue1;
     font-size: 28px;
@@ -119,7 +114,47 @@ section.learnfrom {
     transform: scale(1.02)!important;
 }
 
-// .slide-no-selected {
-//     box-shadow: 0px 1px 4px $white2;
-//     transform: scale(1);
-// }
+
+/* Estilos dispositivos Res: 320px - 768px */
+
+@media (max-width: 768px) {
+
+    section.learnfrom .p1 {
+        width: 508px;
+    }
+
+    .slide {
+        height: 496px;
+        margin-bottom: 70px;
+        width: 382px;
+    }
+    
+    .cont {
+        margin: auto;
+        position: relative;
+        width: 382px;
+    }
+    
+    .slide .card-slider {
+        box-shadow: 0px 1px 4px $white2 !important;
+        display: none;
+        height: 496px;
+        left: 23px;
+        position: absolute;
+        top: 26px;
+        transform: none !important;
+        transition: none;
+        width: 335px;
+    }
+    
+    .slide .card-slider:first-child {
+        display: block;
+    }
+
+    .btnld {
+        margin-right: 35px;
+    }
+
+}
+
+

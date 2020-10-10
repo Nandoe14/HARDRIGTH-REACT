@@ -131,3 +131,14 @@ div.border-select {
 div.select-selected {
     color: $blue1!important;
 }
+
+
+/* Estilos dispositivos Res: 320px - 768px */
+
+@media (max-width: 768px) {
+
+    section.seewhere .p2 {
+        padding: 0 10px;
+    }
+
+}

@@ -33,5 +33,21 @@ header {
 }
 
 
+/* Estilos dispositivos Res: 320px - 768px */
 
+@media (max-width: 768px) {
 
+    header {
+        height: 718px;
+        background-position: 94% 100%;
+    }
+
+    .headcont {
+        padding: 200px 0 0 62px;
+    }
+
+    .headcont p {
+        padding-left: 6px;
+    }
+
+}

@@ -21,7 +21,7 @@ section.seewherevideo {
     justify-content: center;
     height: 496px;
     margin: auto;
-    width: 1067px;
+    max-width: 1067px;
 
     img {
         cursor: pointer;
@@ -78,3 +78,38 @@ section.seewherevideo {
     }
 }
 
+
+/* Estilos dispositivos Res: 320px - 768px */
+
+@media (max-width: 768px) {
+
+    section.seewherevideo {
+        height: 681px;
+
+        .p2 {
+            width: 636px;
+        }
+    }
+
+    .videosw {
+        height: 299px;
+        width: 644px;
+    }
+
+    .videout > div {
+        height: 100%;
+        margin: auto;
+        width: 644px;
+    }
+    
+    .contdivvideo {
+        height: 299px;
+        width: 644px;
+    }
+
+    #videoiframe {
+        height: 299px;
+        width: 644px;
+    }
+
+}

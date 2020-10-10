@@ -1,6 +1,7 @@
 footer {
     background: $white3;
-    height: 394px;
+    height: 392px;
+    padding: 0 63px;
 
     hr {
         margin: 0 0 70px 0;
@@ -21,17 +22,18 @@ footer {
     color: $blue1;
     display: flex;
     justify-content: space-between;
-    padding-right: 60px;
-    width: 700px;
+    width: 640px;
 
     ul {
         list-style: none;
+        min-width: 82px;
+        padding-right: 10px;
     }
 }
 
 .footer-auth {
     height: 118px;
-    width: 366px;
+    width: 466px;
 
     > div {
         float: right;
@@ -42,6 +44,7 @@ footer {
             font-size: 18px;
             line-height: 50px;
             margin-right: 53px;
+            padding-left: 15px;
 
             transition: color 0.2s ease;
 
@@ -90,7 +93,7 @@ footer {
         float: left;
         font-size: 14px;
         line-height: 13px;
-        margin-right: 27px;
+        margin-right: 10px;
     }
 
     a {
@@ -100,8 +103,15 @@ footer {
 
 .legals-cont {
     align-items: center;
-    display: grid;
+    display: flex;
     width: 50%;
+
+    >div {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        width: 255px;
+    }
 }
 
 .social-cont {
@@ -110,14 +120,14 @@ footer {
     width: 50%;
 }
 
-.social { 
+.social {
+    align-items: center;
     float: right;
+    display: flex;
+    justify-content: space-between;
+    width: 273px;
 
-    a {
-        display: inline-block;
-        vertical-align: middle;
-
-        img {
+        a img {
             transition: transform 0.2s ease;
 
             &:hover {
@@ -128,11 +138,10 @@ footer {
                 transform: scale(0.9);
             }
         }
-    }
 
     a:nth-of-type(n+2) {
         display: inline-block;
-        margin-left: 37px;
+        // margin-left: 37px;
     }
 
     a:first-of-type, a:nth-of-type(4), a:nth-of-type(5) {
@@ -156,4 +165,46 @@ footer .container1 > img {
     position: absolute;
     bottom: 0px;
     left: 48%;
+}
+
+
+/* Estilos dispositivos Res: 320px - 768px */
+
+@media (max-width: 768px) {
+
+    footer {
+        background: $white3;
+        height: 411px;
+    
+        hr {
+            display: none;
+        }
+    }
+
+    .cont-table-auth {
+        flex-direction: column;
+        height: unset;
+    }
+
+    .footer-table {
+        padding: 0 0 98px 0;
+        width: unset;
+    }
+
+    .footer-auth {
+        height: 105px;
+        width: unset;
+    
+        > div {
+            float: right;
+        }
+    }
+
+    footer .container1 > img {
+        bottom: 96px;
+        left: 0;
+    }
+
+    
+
 }

@@ -35,7 +35,7 @@ header {
 
 /* Estilos dispositivos Res: 320px - 768px */
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     header {
         height: 718px;
@@ -49,5 +49,58 @@ header {
     .headcont p {
         padding-left: 6px;
     }
-
 }
+
+
+/* Estilos dispositivos Res: MAx 320px */
+
+@media only screen and (max-width: 320px) {
+    
+    header {
+        height: 580px;
+        background-position: 44% 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .headcont {
+        margin: auto;
+        padding: 96px 0 0 0;
+        text-align: center;
+        width: 290px;
+
+        h1 {
+            font-size: 40px;
+            height: 130px;
+            line-height: 45px;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        p {
+            display: block;
+            font-size: 15px;
+            height: 150px;
+            line-height: 18px;
+            margin: 0 auto 20px auto;
+            padding-left: 6px;
+            width: 284px;
+        }
+        
+        button.general {
+            font-size: 16px;
+            height: 40px;
+            line-height: 19px;
+            width: 100%;
+        }
+    }
+
+    .headbut {
+        height: 40px;
+        font-size: 16px;
+        line-height: 19px;
+        width: 100%;
+    }
+}
+
+

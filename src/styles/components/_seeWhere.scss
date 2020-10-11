@@ -23,7 +23,7 @@ section.seewhere {
     }
 }
 
-div.industry-select {
+.industry-select {
     align-items: center;
     background: $white;
     border: 1px solid $white2;
@@ -38,27 +38,27 @@ div.industry-select {
     width: 531px;
 }
 
-div.divhouse, div.divrow {
+.divhouse, .divrow {
     display: grid;
     justify-content: center;
 }
 
-div.divselect {
+.divselect {
     color: $white2;
     font-size: 14px;
     padding: 16px 0;
 }
 
-div.divrow {
+.divrow {
     padding: 20px;
 }
 
-div.divrow img {
+.divrow img {
     transform: rotateZ(-90deg);
     transition: transform 0.3s linear;
 }
 
-div.select-plegable {
+.select-plegable {
     background-color: $white;
     height: 0;
     left: -1px;
@@ -72,7 +72,7 @@ div.select-plegable {
     transition: height 0.5s ease;
 }
 
-div.selectlist {
+.selectlist {
     align-items: center;
     border: 1px solid $white2;
     border-top: none;
@@ -99,46 +99,87 @@ div.selectlist {
     }
 }
 
-div.selectlist:first-child {
+.selectlist:first-child {
     padding-left: 45px;
 }
 
-div.selectlist:first-child > div {
+.selectlist:first-child > div {
     display: flex;
     justify-content: space-between;
 }
 
-div.selectlist:first-child > div > img {
+.selectlist:first-child > div > img {
     padding: 4px 15px 0 0;
 }
 
 
 // toggle classes
 
-div.show-select {
+.show-select {
     height: 350px;
 }
 
-img.row-rotate-select {
+.row-rotate-select {
     transform: rotateZ(0deg)!important;
 }
 
-div.border-select {
+.border-select {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
 
-div.select-selected {
+.select-selected {
     color: $blue1!important;
 }
 
 
 /* Estilos dispositivos Res: 320px - 768px */
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     section.seewhere .p2 {
         padding: 0 10px;
     }
 
+}
+
+
+/* Estilos dispositivos Res: MAx 320px */
+
+@media only screen and (max-width: 320px) {
+    
+    section.seewhere {
+        height: 342px;
+        padding-top: 100px;
+
+        h2 {
+            font-size: 28px;
+            line-height: 33px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .p2 {
+            width: 299px;
+            display: block;
+            font-size: 14px;
+            line-height: 16px;
+            margin: 0 auto 40px auto;
+        }
+
+        > div > span {
+            text-align: left;
+            margin: 0 0 5px 10px;
+        }
+    }
+
+    .industry-select {
+        width: 300px;
+        margin: auto;
+    }
+
+    .select-plegable {
+        width: 300px;
+    }
+    
 }

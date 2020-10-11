@@ -33,7 +33,7 @@ footer {
 
 .footer-auth {
     height: 118px;
-    width: 466px;
+    width: 436px;
 
     > div {
         float: right;
@@ -170,7 +170,7 @@ footer .container1 > img {
 
 /* Estilos dispositivos Res: 320px - 768px */
 
-@media (max-width: 768px) {
+@media only screen and (min-width: 321px) and (max-width: 768px) {
 
     footer {
         background: $white3;

@@ -213,7 +213,7 @@ button.general {
 
 /* Estilos dispositivos Res: 320px - 768px */
 
-@media (max-width: 768px) {
+@media only screen and (min-width: 321px) and (max-width: 768px) {
 
     section.contactus {
         background-position: center top;

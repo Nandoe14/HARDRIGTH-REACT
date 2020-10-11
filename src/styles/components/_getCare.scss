@@ -1,76 +1,4 @@
 
-// section.getcare {
-//     align-items: center;
-//     background-image: url(../../assets/blake-unsplash.png);
-//     display: flex;
-//     justify-content: center;
-//     height: 1250px;
-//     width: 100%;
-// }
-
-// .form-box {
-//     border: 1px solid rgba(198, 201, 210, 0.387183);
-//     border-radius: 6px;
-//     background: $white;
-//     height: 738px;
-//     width: 701px;
-// }
-
-// .info-cont {
-//     margin: auto;
-//     width: 516px;
-
-//     > div {
-//         width: 516px;
-//     }
-
-//     h2 {
-//         padding: 44px 0 10px 0;
-//         text-align: center;
-//         text-transform: capitalize;
-//     }
-
-//     > div > span {
-//         color: $blue1;
-//         display: block;
-//         font-size: 16px;
-//         line-height: 24px;
-//         margin: auto;
-//         padding-bottom: 52px;
-//         text-align: center;
-//         width: 452px;
-//     }
-// }
-
-// .form-info span {
-//     color: $blue1;
-//     display: block;
-//     font-size: 16px;
-//     line-height: 19px;
-//     padding-bottom: 10px;
-//     text-transform: capitalize;
-//     width: 100%;
-// }
-
-// .form-info input {
-//     color: #82858E;
-//     border: 1px solid #989CA6;
-//     border-radius: 6px;
-//     font-size: 16px;
-//     height: 50px;
-//     line-height: 28px;
-//     letter-spacing: 0.494018px;
-//     margin-bottom: 25px;
-//     mix-blend-mode: normal;
-//     opacity: 0.3;
-//     width: 100%;
-
-//     &:focus {
-//         outline: none;
-//     }
-// }
-
-
 section.getcare {
     align-items: center;
     background-image: url(../../assets/blake-unsplash.png);
@@ -115,7 +43,7 @@ section.getcare {
     display: block;
     font-size: 16px;
     line-height: 19px;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     text-transform: capitalize;
     width: 100%;
 }
@@ -136,6 +64,7 @@ section.getcare {
 .form-info input {
     border: 1px solid #989ca64d;
     border-radius: 6px;
+    box-sizing: border-box;
     color: #82858E;
     font-size: 16px;
     height: 50px;
@@ -153,4 +82,60 @@ section.getcare {
 
 .form-info button {
     margin-top: 15px;
+}
+
+
+/* Estilos dispositivos Res: 320px - 768px */
+
+@media only screen and (max-width: 768px) {
+
+    .form-box {
+        height: 952px;
+        width: 644px;
+    }
+
+    .info-cont {
+        width: 516px;
+
+        h2 {
+            padding-top: 52px;
+        }
+    }
+
+    .reg-cont {
+        float: left;
+        margin: 0;
+        width: 100%;
+    }
+
+    .form-info button {
+        width: 100%;
+    }
+}
+
+
+/* Estilos dispositivos Res: MAx 320px */
+
+@media only screen and (max-width: 320px) {
+    
+    .form-box {
+        height: 974px;
+        width: 290px;
+    }
+
+    .info-cont {
+        width: 249px;
+
+        h2 {
+            font-size: 28px;
+            line-height: 33px;
+            padding-top: 50px;
+        }
+
+        > div > span {
+            font-size: 14px;
+            padding-bottom: 40px;
+            width: 242px;
+        }
+    }
 }

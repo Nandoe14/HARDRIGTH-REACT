@@ -225,3 +225,65 @@ button.general {
     }
 
 }
+
+
+/* Estilos dispositivos Res: MAx 320px */
+
+@media only screen and (max-width: 320px) {
+    
+    section.contactus {
+        width: 100%;
+        height: 756px;
+        background-image: none;
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(250,249,252,1) 100%);
+        padding-top: 0;
+    }
+
+    .location {
+        display: none;
+    }
+ 
+    #contact {
+        width: 300px;
+        height: 686px;
+    }
+
+    #contact > div {
+        width: 260px;
+        margin: auto;
+    }
+
+    #contact h2 {
+        font-size: 28px;
+        line-height: 33px;
+        padding: 44px 0 7px 0;
+    }
+    
+    #contact > div > span {
+        font-size: 14px;
+    }
+    
+    #contact hr {
+        opacity: 0.1;
+    }
+    
+    #contact form span {
+        font-size: 15px;
+    }
+    
+    #contact input[name="message"] {
+        margin-top: 10px !important;
+    }
+    
+    #contact hr:last-of-type {
+        margin-bottom: 50px;
+    }
+    
+    #contact button {
+        width: 260px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+}

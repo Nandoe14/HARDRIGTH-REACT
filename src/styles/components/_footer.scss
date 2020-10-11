@@ -141,36 +141,35 @@ footer {
 
     a:nth-of-type(n+2) {
         display: inline-block;
-        // margin-left: 37px;
     }
 
     a:first-of-type, a:nth-of-type(4), a:nth-of-type(5) {
-        width: 22px;
         height: 22px;
+        width: 22px;
     }
 
     a:nth-of-type(2) {
-        width: 22px;
         height: 18px;
+        width: 22px;
     }
 
     a:nth-of-type(3) {
-        width: 26px;
         height: 18px;
+        width: 26px;
     }
 
 }
 
 footer .container1 > img {
-    position: absolute;
     bottom: 0px;
+    position: absolute;
     left: 48%;
 }
 
 
 /* Estilos dispositivos Res: 320px - 768px */
 
-@media only screen and (min-width: 321px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     footer {
         background: $white3;
@@ -204,7 +203,75 @@ footer .container1 > img {
         bottom: 96px;
         left: 0;
     }
+}
 
+
+/* Estilos dispositivos Res: MAx 320px */
+
+@media only screen and (max-width: 320px) {
     
+    footer {
+        box-sizing: border-box;
+        display: block;
+        height: 670px;
+        margin: auto;
+        padding: 0;
+        width: 300px;
+    }
+    
+    .footer-table {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 0px;
 
+        ul {
+            width: 130px;
+
+            &:nth-child(-n+4) {
+                height: 154px;
+            }
+        }
+    }
+
+    .footer-auth {
+        height: 40px;
+        padding-bottom: 58px;
+        width: 100%;
+
+        > div span {
+            margin-right: 48px;
+            padding: 0px;
+        }
+
+        button {
+            font-size: 16px;
+            height: 40px;
+            line-height: 19px;
+            width: 205px;
+        }
+    }
+
+    .foot {
+        flex-direction: column-reverse;
+        height: 80px;
+    }
+
+    .legals-cont > div {
+        align-items: end;
+        height: 62px;
+        padding-left: 87px;
+
+        span:first-child {
+            width: 110px;
+        }
+    }
+
+    .social-cont, .social {
+        width: 100%;
+    }
+
+    footer .container1 > img {
+        bottom: 0;
+        left: 0;
+    }
 }

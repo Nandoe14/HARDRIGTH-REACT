@@ -1,0 +1,156 @@
+
+// section.getcare {
+//     align-items: center;
+//     background-image: url(../../assets/blake-unsplash.png);
+//     display: flex;
+//     justify-content: center;
+//     height: 1250px;
+//     width: 100%;
+// }
+
+// .form-box {
+//     border: 1px solid rgba(198, 201, 210, 0.387183);
+//     border-radius: 6px;
+//     background: $white;
+//     height: 738px;
+//     width: 701px;
+// }
+
+// .info-cont {
+//     margin: auto;
+//     width: 516px;
+
+//     > div {
+//         width: 516px;
+//     }
+
+//     h2 {
+//         padding: 44px 0 10px 0;
+//         text-align: center;
+//         text-transform: capitalize;
+//     }
+
+//     > div > span {
+//         color: $blue1;
+//         display: block;
+//         font-size: 16px;
+//         line-height: 24px;
+//         margin: auto;
+//         padding-bottom: 52px;
+//         text-align: center;
+//         width: 452px;
+//     }
+// }
+
+// .form-info span {
+//     color: $blue1;
+//     display: block;
+//     font-size: 16px;
+//     line-height: 19px;
+//     padding-bottom: 10px;
+//     text-transform: capitalize;
+//     width: 100%;
+// }
+
+// .form-info input {
+//     color: #82858E;
+//     border: 1px solid #989CA6;
+//     border-radius: 6px;
+//     font-size: 16px;
+//     height: 50px;
+//     line-height: 28px;
+//     letter-spacing: 0.494018px;
+//     margin-bottom: 25px;
+//     mix-blend-mode: normal;
+//     opacity: 0.3;
+//     width: 100%;
+
+//     &:focus {
+//         outline: none;
+//     }
+// }
+
+
+section.getcare {
+    align-items: center;
+    background-image: url(../../assets/blake-unsplash.png);
+    display: flex;
+    justify-content: center;
+    height: 1250px;
+    width: 100%;
+}
+
+.form-box {
+    border: 1px solid rgba(198, 201, 210, 0.387183);
+    border-radius: 6px;
+    background: $white;
+    height: 738px;
+    width: 701px;
+}
+
+.info-cont {
+    margin: auto;
+    width: 582px;
+
+    h2 {
+        padding: 44px 0 10px 0;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    > div > span {
+        color: $blue1;
+        display: block;
+        font-size: 16px;
+        line-height: 24px;
+        margin: auto;
+        padding-bottom: 52px;
+        text-align: center;
+        width: 452px;
+    }
+}
+
+.form-info span {
+    color: $blue1;
+    display: block;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.reg-cont {
+    float: left;
+    width: 274px;
+}
+
+.reg-cont:nth-child(3), .reg-cont:nth-child(4) {
+    width: 100%;
+}
+
+.reg-cont:nth-child(1), .reg-cont:nth-child(5) {
+    margin-right: 33px;
+}
+
+.form-info input {
+    border: 1px solid #989ca64d;
+    border-radius: 6px;
+    color: #82858E;
+    font-size: 16px;
+    height: 50px;
+    line-height: 28px;
+    letter-spacing: 0.494018px;
+    margin-bottom: 25px;
+    mix-blend-mode: normal;
+    padding-left: 10px;
+    width: 100%;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.form-info button {
+    margin-top: 15px;
+}

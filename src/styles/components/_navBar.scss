@@ -12,11 +12,39 @@ section.navbar {
 display: none;
 
 
-    div {
+    div.container1 {
         align-items: center;
         display: flex;
         justify-content: space-between;
         height: inherit;
+
+        div.logos-cont {
+            justify-content: space-between;
+        }
+    }
+
+    #logo-blue {
+        display: none;
+    }
+
+
+    #menu-icon {
+        display: none;
+        width: 20px;
+    }
+
+    #menu-icon, #close-icon {
+        cursor: pointer;
+
+        transition: transform 0.2s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &:active {
+                transform: scale(0.9);
+            }
     }
 
     nav {
@@ -24,11 +52,13 @@ display: none;
         width: 65%;
     }
     
-    ul {
+    ul.menu-list {
         align-items: center;
         display: flex;
         justify-content: space-between;
         height: inherit;
+
+        transition: height 0.5s ease;
     }
     
     li {
@@ -59,6 +89,7 @@ display: none;
         border: 1px solid $white;
         border-radius: 6px;
         color: $white;
+        cursor: pointer;
         height: 40px;
         text-transform: capitalize;
         width: 140px;
@@ -66,6 +97,7 @@ display: none;
         transition: all 0.2s ease;
     
         &:hover {
+            background-color: transparent;
             border: 1px solid rgb(138, 138, 230);
             border-radius: unset;
             color: rgb(138, 138, 230);
@@ -94,3 +126,120 @@ display: none;
     color: $blue2!important;
 }
 
+.show-list {
+    height: 426px!important;
+}
+
+
+/* Estilos dispositivos Res: 320px - 768px */
+
+@media only screen and (max-width: 768px) {
+
+    section.navbar {
+        height: 63px;
+        top: 0;
+
+        #logo-blue {
+            display: block;
+        }
+
+        #logo-white {
+            display: none;
+        }
+
+        div.container1 {
+            background-color: $white;
+            display: block;
+            position: relative;
+
+            div.logos-cont {
+                align-items: center;
+                border-bottom: 1px solid rgba(198, 201, 210, 0.438292);
+                box-sizing: border-box;
+                display: flex;
+                height: inherit;
+                padding: 0 30px;
+
+                img {
+                    height: 32px;
+                }
+
+                #menu-icon {
+                    display: block;
+                }
+
+                #close-icon {
+                    width: 16px;
+                }
+            }
+        }
+
+        nav {
+            background-color: $white;
+            box-shadow: 0px 6px 9px $white2;
+            height: unset;
+            width: 100%;
+        }
+
+        ul.menu-list {
+            align-items: flex-start;
+            display: block;
+            flex-direction: column;
+            height: 0;
+            overflow: hidden;
+        }
+
+        li {
+            box-sizing: border-box;
+            height: 60px;
+            padding-left: 30px;
+            width: 100%;
+
+            &:nth-child(-n+5):hover {
+                border: 1px solid rgba(198, 201, 210, 0.438292);
+            }
+
+            &:last-child {
+                height: 126px;
+                padding: 28px 30px 20px 30px;
+            }
+
+            &{
+                outline: none;
+            }
+        }
+
+        a {
+            color: $blue1;
+
+            &:hover {
+                color: $blue2;
+            }
+        }
+
+        button {
+            background-color: $blue2;
+            border: 1px solid $white;
+            color: $white;
+            height: 50px;
+            width: 100%;
+
+            transition: background-color 0.2s ease;
+
+            &:hover {
+                background-color: darken($color: $blue2, $amount: 10);
+                border-radius: 6px;
+                color: $white;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &:active {
+                background-color: darken($color: $blue2, $amount: 40);
+                transform: scale(0.95);
+            }
+        }
+    }
+}

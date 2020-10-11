@@ -2,6 +2,7 @@ import React from 'react'
 import { ContactUs } from './components/contactUs/ContactUs'
 import { Footer } from './components/footer/Footer'
 import { GetAhead } from './components/getAhead/GetAhead'
+import { GetCare } from './components/getCare/GetCare'
 import { Header } from './components/header/Header'
 import { LearnFrom } from './components/learnFrom/LearnFrom'
 import { NavBar } from './components/navBar/NavBar'
@@ -19,6 +20,7 @@ export const HardRigth = () => {
             <SeeWhereVideo />
             <ContactUs />
             <Footer />
+            <GetCare />
         </>
     )
 }

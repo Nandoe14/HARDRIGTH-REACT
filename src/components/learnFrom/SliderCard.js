@@ -11,7 +11,7 @@ export const SliderCard = ({ i }) => {
     const footerCardArray = ['Read report', 'Read report', 'Read report']
 
     return (
-        <div className={`card-slider ${(i === 0) && 'slide-selected'}`}>
+        <div className={`card-slider show-none-card ${(i === 0) && 'slide-selected show-block-card'}`}>
             <h3>{titleCardArray[i]}</h3>
             <span>{contentCardArray[i]}</span>
             <div className="img">

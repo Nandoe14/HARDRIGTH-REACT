@@ -26,7 +26,7 @@ export const Footer = () => {
                     <div className="footer-auth">
                         <div>
                             <span className="login">Login</span>
-                            <Button content="get started" />
+                            <Button id="footer-button" content="get started" />
                         </div>
                     </div>
                 </div>

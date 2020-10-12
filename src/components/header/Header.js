@@ -7,7 +7,7 @@ export const Header = () => {
             <div className="headcont">
                 <h1>HR software<br />that really matters</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-                <Button content="get started" />
+                <Button id="header-button" content="get started" />
             </div>
         </header>
     )

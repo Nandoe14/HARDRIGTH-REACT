@@ -8,9 +8,7 @@ section.navbar {
     width: 100%;
     z-index: 1;
 
-
-display: none;
-
+    transition: all 0.2s linear;
 
     div.container1 {
         align-items: center;
@@ -22,11 +20,6 @@ display: none;
             justify-content: space-between;
         }
     }
-
-    #logo-blue {
-        display: none;
-    }
-
 
     #menu-icon {
         display: none;
@@ -69,7 +62,7 @@ display: none;
         text-transform: capitalize;
     }
     
-    a {
+    .link-nav-bar {
         align-items: center;
         color: $white;
         display: flex;
@@ -80,7 +73,7 @@ display: none;
         transition: color 0.2s ease;
     
         &:hover {
-            color: rgb(138, 138, 230);
+            color: rgb(138, 138, 230)!important;
         }
     }
     
@@ -112,18 +105,28 @@ display: none;
 
 // Toggle classes
 
-.changes-nav-bar {
-    background-color: $white!important;
-    top: 0!important;
-}
+@media only screen and (min-width: 769px) {
+    .show-none {
+        display: none!important;
+    }
+    
+    .show-block {
+        display: block!important;
+    }
 
-.changes-text-nav-bar {
-    color: $blue1!important;
-}
-
-.changes-button-nav-bar {
-    border-color: $blue2!important;
-    color: $blue2!important;
+    .changes-nav-bar {
+        background-color: $white!important;
+        top: 0!important;
+    }
+    
+    .changes-text-nav-bar {
+        color: $blue1!important;
+    }
+    
+    .changes-button-nav-bar {
+        border-color: $blue2!important;
+        color: $blue2!important;
+    }
 }
 
 .show-list {
@@ -209,7 +212,7 @@ display: none;
             }
         }
 
-        a {
+        .link-nav-bar {
             color: $blue1;
 
             &:hover {
@@ -241,5 +244,12 @@ display: none;
                 transform: scale(0.95);
             }
         }
+    }
+
+    // Toggle classes
+
+    .changes-button-nav-bar {
+        border: none;
+        color: $white!important;
     }
 }

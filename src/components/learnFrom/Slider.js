@@ -19,35 +19,74 @@ export const Slider = () => {
         } else {
             decrement(1)
         }
-        switch (counter) {
-            case 0:
-                cards[0].classList.toggle("slide-selected")
-                if (!val) {
-                    cards[2].classList.toggle("slide-selected")
-                    reset2()
-                } else {
-                    cards[counter + 1].classList.toggle("slide-selected")
-                }
-                break;
-            case 1:
-                cards[counter].classList.toggle("slide-selected")
-                if (val) {
-                    cards[counter + 1].classList.toggle("slide-selected")
-                } else {
-                    cards[counter - 1].classList.toggle("slide-selected")
-                }
-                break;
-            case 2:
-                cards[2].classList.toggle("slide-selected")
-                if (val) {
+
+        if (window.innerWidth > 768) {
+
+            switch (counter) {
+                case 0:
                     cards[0].classList.toggle("slide-selected")
-                    reset()
-                } else {
-                    cards[counter - 1].classList.toggle("slide-selected")
-                }
-                break;
-            default:
-                break;
+                    if (!val) {
+                        cards[2].classList.toggle("slide-selected")
+                        reset2()
+                    } else {
+                        cards[counter + 1].classList.toggle("slide-selected")
+                    }
+                    break;
+                case 1:
+                    cards[counter].classList.toggle("slide-selected")
+                    if (val) {
+                        cards[counter + 1].classList.toggle("slide-selected")
+                    } else {
+                        cards[counter - 1].classList.toggle("slide-selected")
+                    }
+                    break;
+                case 2:
+                    cards[2].classList.toggle("slide-selected")
+                    if (val) {
+                        cards[0].classList.toggle("slide-selected")
+                        reset()
+                    } else {
+                        cards[counter - 1].classList.toggle("slide-selected")
+                    }
+                    break;
+                default:
+                    break;
+            }
+
+        } else {
+
+            switch (counter) {
+
+                case 0:
+                    cards[0].classList.toggle("show-block-card")
+                    if (!val) {
+                        cards[2].classList.toggle("show-block-card")
+                        reset2()
+                    } else {
+                        cards[counter + 1].classList.toggle("show-block-card")
+                    }
+                    break;
+                case 1:
+                    cards[counter].classList.toggle("show-block-card")
+                    if (val) {
+                        cards[counter + 1].classList.toggle("show-block-card")
+                    } else {
+                        cards[counter - 1].classList.toggle("show-block-card")
+                    }
+                    break;
+                case 2:
+                    cards[2].classList.toggle("show-block-card")
+                    if (val) {
+                        cards[0].classList.toggle("show-block-card")
+                        reset()
+                    } else {
+                        cards[counter - 1].classList.toggle("show-block-card")
+                    }
+                    break;
+                default:
+                    break;
+            }
+
         }
     }
 

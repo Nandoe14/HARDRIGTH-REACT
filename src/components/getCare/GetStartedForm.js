@@ -40,7 +40,7 @@ export const GetStartedForm = () => {
                         </div>
                     )
                 }
-                <Button content="get started" />
+                <Button id="get-started-button" content="get started" />
             </form>
         </div>
     )

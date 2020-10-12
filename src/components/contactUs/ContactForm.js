@@ -36,7 +36,7 @@ export const ContactForm = () => {
 
             <input name="message" type="text" placeholder="Message" maxLength="100" required value={message} onChange={handleInputChange} />
             <hr />
-            <Button content="submit" />
+            <Button id="contact-button" content="submit" />
         </form>
     )
 }

@@ -9,13 +9,12 @@ import { useDispatch } from 'react-redux';
 import { firebase } from '../firebase/firebase-config'
 import { GetAhead } from '../components/getAhead/GetAhead';
 import { HomeContFoot } from '../components/HomeContFoot';
-import { LearnFrom } from '../components/learnFrom/LearnFrom';
-import { SeeWhere } from '../components/seeWhere/SeeWhere';
-import { SeeWhereVideo } from '../components/seeWhereVideo/SeeWhereVideo';
 import { NavBar } from '../components/navBar/NavBar';
 import { login } from '../actions/auth';
 import { AuthRouter } from './AuthRouter';
 import { PublicRoute } from './PublicRoute';
+import { OcultRouter } from './OcultRouter';
+import { PrivateRoute } from './PrivateRoute';
 
 export const AppRouter = () => {
 
@@ -53,10 +52,8 @@ export const AppRouter = () => {
                     <Route exact path="/" component={HomeContFoot} />
                     <Route exact path="/products" component={HomeContFoot} />
                     <Route exact path="/pricing" component={GetAhead} />
-                    <Route exact path="/solutions" component={SeeWhere} />
-                    <Route exact path="/demo" component={LearnFrom} />
-                    <Route exact path="/services" component={SeeWhereVideo} />
 
+                    <PrivateRoute path="/ocult" component={OcultRouter} isAuthenticated={isLoggedIn} />
                     <PublicRoute path="/auth" component={AuthRouter} isAuthenticated={isLoggedIn} />
 
                     <Redirect to="/" />

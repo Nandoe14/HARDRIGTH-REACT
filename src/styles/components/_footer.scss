@@ -171,6 +171,7 @@ footer .container1 > img {
 }
 
 .logout {
+    color: #c70000d1!important;
     font-size: 16px!important;
     font-weight: bold;
 }
@@ -268,7 +269,8 @@ footer .container1 > img {
     .legals-cont > div {
         align-items: end;
         height: 62px;
-        padding-left: 87px;
+        padding-left: 79px;
+        width: unset;
 
         span:first-child {
             width: 110px;

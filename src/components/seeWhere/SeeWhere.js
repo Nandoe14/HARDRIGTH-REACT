@@ -47,6 +47,8 @@ export const SeeWhere = () => {
         reset()
     }
 
+    window.scrollTo(0, 0);
+
     return (
         <>
             <section className="seewhere">
@@ -57,7 +59,7 @@ export const SeeWhere = () => {
 
                     <div className="industry-select">
                         <div className="divhouse">
-                            <img src={house} alt="" />
+                            <img className="animate__animated animate__tada" src={house} alt="" />
                         </div>
                         <div className="divselect" onClick={handleClickIndustry}>
                             <span>{select}</span>

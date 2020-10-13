@@ -2,8 +2,11 @@ import React from 'react'
 import { GetStartedForm } from './GetStartedForm'
 
 export const Register = () => {
+
+    window.scrollTo(0, 0);
+
     return (
-        <section className="getcare">
+        <section className="getcare animate__animated animate__zoomIn animate__faster">
             <div className="form-box">
                 <div className="info-cont">
                     <div>

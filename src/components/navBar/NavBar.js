@@ -6,6 +6,7 @@ import closeVideo from './../../assets/close_icon_2.svg'
 import { Button } from '../buttons/Button'
 
 import { Link, useLocation } from "react-router-dom";
+import { useSelector } from 'react-redux'
 
 export const NavBar = () => {
 
@@ -16,6 +17,8 @@ export const NavBar = () => {
     })
 
     const { menuHamburgerShowed } = state
+
+    const { name } = useSelector(s => s.auth)
 
     const handleClick = () => {
         if (window.innerWidth <= 768) {
@@ -69,7 +72,7 @@ export const NavBar = () => {
     }, [pathname])
 
     return (
-        <section className="navbar">
+        <section className="navbar animate__animated animate__bounceInDown">
             <div className="container1">
                 <div className="logos-cont">
                     <img id="logo-white" className="" src={logo1} alt="HARDRIGTH" />
@@ -86,10 +89,10 @@ export const NavBar = () => {
                     <ul className="menu-list">
                         <li><Link className="link-nav-bar" to="/products" onClick={handleClick}>products</Link></li>
                         <li><Link className="link-nav-bar" to="/pricing" onClick={handleClick}>pricing</Link></li>
-                        <li><Link className="link-nav-bar" to="/solutions" onClick={handleClick}>solutions</Link></li>
-                        <li><Link className="link-nav-bar" to="/demo" onClick={handleClick}>demo</Link></li>
-                        <li><Link className="link-nav-bar" to="/services" onClick={handleClick}>services</Link></li>
-                        <li><Link to="/auth/register"><Button id="nav-button" content="get started" /></Link></li>
+                        <li><Link className="link-nav-bar" to="/ocult/solutions" onClick={handleClick}>solutions</Link></li>
+                        <li><Link className="link-nav-bar" to="/ocult/demo" onClick={handleClick}>demo</Link></li>
+                        <li><Link className="link-nav-bar" to="/ocult/services" onClick={handleClick}>services</Link></li>
+                        <li><Link to="/auth/register"><Button id="nav-button" content={`${(name) ? name : 'get started'}`} /></Link></li>
                     </ul>
                 </nav>
             </div>

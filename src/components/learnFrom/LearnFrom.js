@@ -4,6 +4,8 @@ import { Footer } from '../footer/Footer'
 
 export const LearnFrom = () => {
 
+    window.scrollTo(0, 0);
+
     return (
         <>
             <section className="learnfrom">

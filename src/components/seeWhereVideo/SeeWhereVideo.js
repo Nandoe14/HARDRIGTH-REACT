@@ -11,6 +11,8 @@ export const SeeWhereVideo = () => {
         setState(!state)
     }
 
+    window.scrollTo(0, 0);
+
     return (
         <>
             <section className="seewherevideo">

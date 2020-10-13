@@ -8,12 +8,14 @@ import youtubeIcon from '../../assets/Youtube.svg'
 import pinteresIcon from '../../assets/Pinteres.svg'
 import linkedinIcon from '../../assets/In.svg'
 import { Link } from 'react-router-dom'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { startLogout } from '../../actions/auth'
 
 export const Footer = () => {
 
     const cantListArray = [0, 1, 2, 3, 4]
+
+    const { name } = useSelector(state => state.auth)
 
     const dispatch = useDispatch()
 
@@ -34,10 +36,14 @@ export const Footer = () => {
                     </div>
                     <div className="footer-auth">
                         <div>
-                            <Link
-                                className="link-login"
-                                to="/auth/login"
-                            ><span className="login">Login</span></Link>
+                            {
+                                (!name)
+                                &&
+                                <Link
+                                    className="link-login"
+                                    to="/auth/login"
+                                ><span className="login">Login</span></Link>
+                            }
 
                             <Link
                                 to="/auth/register"
@@ -53,11 +59,15 @@ export const Footer = () => {
                         <div>
                             <span><a href="#a">HardRigth.io, Inc.</a></span>
                             <span><a href="#a">Terms</a></span>
-                            <Link
-                                className="link-login"
-                                to="/auth/login"
-                                onClick={handleLogout}
-                            ><span className="logout">Logout</span></Link>
+                            {
+                                (name)
+                                &&
+                                <Link
+                                    className="link-login"
+                                    to="/auth/login"
+                                    onClick={handleLogout}
+                                ><span className="logout">Logout</span></Link>
+                            }
                         </div>
                     </div>
                     <div className="social-cont">

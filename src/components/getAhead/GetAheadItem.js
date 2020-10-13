@@ -10,8 +10,14 @@ export const GetAheadItem = ({ i }) => {
     const numArray = [200, '320M', '320M', 320]
     const classArray = ['tickets', 'customers', 'agents', 'customers']
 
+    const handleClick = (id) => {
+        const unitElement = document.querySelector(id)
+        unitElement.classList.add("animate__animated")
+        unitElement.classList.add("animate__hinge")
+    }
+
     return (
-        <div className="unit">
+        <div id={`unit${i}`} className="unit" onClick={() => handleClick(`#unit${i}`)}>
             <div className="cell">
                 <div className="cell-img">
                     <img src={imgsArray[i]} alt="Tickets" />

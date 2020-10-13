@@ -59,28 +59,37 @@ export const Slider = () => {
 
                 case 0:
                     cards[0].classList.toggle("show-block-card")
+                    cards[0].classList.toggle("animate__bounceIn")
                     if (!val) {
                         cards[2].classList.toggle("show-block-card")
+                        cards[2].classList.toggle("animate__bounceIn")
                         reset2()
                     } else {
                         cards[counter + 1].classList.toggle("show-block-card")
+                        cards[counter + 1].classList.toggle("animate__bounceIn")
                     }
                     break;
                 case 1:
                     cards[counter].classList.toggle("show-block-card")
+                    cards[counter].classList.toggle("animate__bounceIn")
                     if (val) {
                         cards[counter + 1].classList.toggle("show-block-card")
+                        cards[counter + 1].classList.toggle("animate__bounceIn")
                     } else {
                         cards[counter - 1].classList.toggle("show-block-card")
+                        cards[counter - 1].classList.toggle("animate__bounceIn")
                     }
                     break;
                 case 2:
                     cards[2].classList.toggle("show-block-card")
+                    cards[2].classList.toggle("animate__bounceIn")
                     if (val) {
                         cards[0].classList.toggle("show-block-card")
+                        cards[0].classList.toggle("animate__bounceIn")
                         reset()
                     } else {
                         cards[counter - 1].classList.toggle("show-block-card")
+                        cards[counter - 1].classList.toggle("animate__bounceIn")
                     }
                     break;
                 default:

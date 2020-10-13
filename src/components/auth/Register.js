@@ -1,7 +1,7 @@
 import React from 'react'
 import { GetStartedForm } from './GetStartedForm'
 
-export const GetCare = () => {
+export const Register = () => {
     return (
         <section className="getcare">
             <div className="form-box">

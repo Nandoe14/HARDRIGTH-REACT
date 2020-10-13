@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HardRigth } from './HardRigth';
+import { HardRigthCont } from './HardRigthCont';
 import './styles/styles.scss';
 
 
 ReactDOM.render(
-  <HardRigth />,
+  <HardRigthCont />,
   document.getElementById('root')
 );

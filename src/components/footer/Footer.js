@@ -1,16 +1,25 @@
 import React from 'react'
 import { Button } from '../buttons/Button'
 import { FooterTableList } from './FooterTableList'
-import logoFooter from '../../assets/Group_12.svg';
-import facebookIcon from '../../assets/Facebook.svg';
-import twitterIcon from '../../assets/twitter.svg';
-import youtubeIcon from '../../assets/Youtube.svg';
-import pinteresIcon from '../../assets/Pinteres.svg';
-import linkedinIcon from '../../assets/In.svg';
+import logoFooter from '../../assets/Group_12.svg'
+import facebookIcon from '../../assets/Facebook.svg'
+import twitterIcon from '../../assets/twitter.svg'
+import youtubeIcon from '../../assets/Youtube.svg'
+import pinteresIcon from '../../assets/Pinteres.svg'
+import linkedinIcon from '../../assets/In.svg'
+import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { startLogout } from '../../actions/auth'
 
 export const Footer = () => {
 
     const cantListArray = [0, 1, 2, 3, 4]
+
+    const dispatch = useDispatch()
+
+    const handleLogout = () => {
+        dispatch(startLogout())
+    }
 
     return (
         <footer>
@@ -25,8 +34,14 @@ export const Footer = () => {
                     </div>
                     <div className="footer-auth">
                         <div>
-                            <span className="login">Login</span>
-                            <Button id="footer-button" content="get started" />
+                            <Link
+                                className="link-login"
+                                to="/auth/login"
+                            ><span className="login">Login</span></Link>
+
+                            <Link
+                                to="/auth/register"
+                            ><Button id="footer-button" content="get started" /></Link>
                         </div>
                     </div>
                 </div>
@@ -38,7 +53,11 @@ export const Footer = () => {
                         <div>
                             <span><a href="#a">HardRigth.io, Inc.</a></span>
                             <span><a href="#a">Terms</a></span>
-                            <span><a href="#a">Privacy</a></span>
+                            <Link
+                                className="link-login"
+                                to="/auth/login"
+                                onClick={handleLogout}
+                            ><span className="logout">Logout</span></Link>
                         </div>
                     </div>
                     <div className="social-cont">
@@ -54,8 +73,6 @@ export const Footer = () => {
                     </div>
                 </div>
             </div>
-
-
         </footer >
     )
 }

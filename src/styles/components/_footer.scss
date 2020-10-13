@@ -52,6 +52,10 @@ footer {
                 color: darken($color: $blue2, $amount: 20);
             }
         }
+
+        .link-login {
+            text-decoration: none;
+        }
     }
 
     button {
@@ -106,7 +110,7 @@ footer {
     display: flex;
     width: 50%;
 
-    >div {
+    > div {
         align-items: center;
         display: flex;
         justify-content: space-between;
@@ -164,6 +168,11 @@ footer .container1 > img {
     bottom: 0px;
     position: absolute;
     left: 48%;
+}
+
+.logout {
+    font-size: 16px!important;
+    font-weight: bold;
 }
 
 

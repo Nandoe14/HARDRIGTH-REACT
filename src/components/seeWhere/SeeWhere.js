@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useFormWithFilter } from '../../hooks/useFormWithFilter';
+import { Footer } from '../footer/Footer';
 import house from './../../assets/home.svg';
 import row from './../../assets/row.svg';
 import search from './../../assets/search_icon.svg';
@@ -47,47 +48,50 @@ export const SeeWhere = () => {
     }
 
     return (
-        <section className="seewhere">
-            <div className="container2">
-                <h2>See where you stand</h2>
-                <p className="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                <span>industry</span>
+        <>
+            <section className="seewhere">
+                <div className="container2">
+                    <h2>See where you stand</h2>
+                    <p className="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                    <span>industry</span>
 
-                <div className="industry-select">
-                    <div className="divhouse">
-                        <img src={house} alt="" />
-                    </div>
-                    <div className="divselect" onClick={handleClickIndustry}>
-                        <span>{select}</span>
-                    </div>
-                    <div className="divrow" onClick={handleClickIndustry}>
-                        <img id="rowselect" src={row} alt="row" />
-                    </div>
-                    <div className="select-plegable">
-                        <div className="selectlist">
-                            <div>
-                                <InputIndustry
-                                    isearch={isearch}
-                                    handleInputChange={handleInputChange}
-                                />
-                                <img src={search} alt="search" />
-                            </div>
+                    <div className="industry-select">
+                        <div className="divhouse">
+                            <img src={house} alt="" />
                         </div>
-                        {
-                            industries.map(ind =>
-                                (<IndustryElement
-                                    key={ind}
-                                    industry={ind}
-                                    state={state}
-                                    setState={setState}
-                                    visualChanges={visualChanges}
-                                />)
-                            )
-                        }
+                        <div className="divselect" onClick={handleClickIndustry}>
+                            <span>{select}</span>
+                        </div>
+                        <div className="divrow" onClick={handleClickIndustry}>
+                            <img id="rowselect" src={row} alt="row" />
+                        </div>
+                        <div className="select-plegable">
+                            <div className="selectlist">
+                                <div>
+                                    <InputIndustry
+                                        isearch={isearch}
+                                        handleInputChange={handleInputChange}
+                                    />
+                                    <img src={search} alt="search" />
+                                </div>
+                            </div>
+                            {
+                                industries.map(ind =>
+                                    (<IndustryElement
+                                        key={ind}
+                                        industry={ind}
+                                        state={state}
+                                        setState={setState}
+                                        visualChanges={visualChanges}
+                                    />)
+                                )
+                            }
+                        </div>
                     </div>
-                </div>
 
-            </div>
-        </section>
+                </div>
+            </section>
+            <Footer />
+        </>
     )
 }

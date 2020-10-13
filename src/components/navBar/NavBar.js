@@ -1,13 +1,15 @@
-import React, { useState } from 'react'
+import React, { useLayoutEffect, useState } from 'react'
 import logo1 from './../../assets/logo.svg'
 import logo2 from './../../assets/Logo_Fixed_Header.svg'
 import menuicon from './../../assets/Hamburger_menu_icon.svg'
 import closeVideo from './../../assets/close_icon_2.svg'
 import { Button } from '../buttons/Button'
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export const NavBar = () => {
+
+    const { pathname } = useLocation()
 
     const [state, setState] = useState({
         menuHamburgerShowed: true,
@@ -16,10 +18,12 @@ export const NavBar = () => {
     const { menuHamburgerShowed } = state
 
     const handleClick = () => {
-        document.querySelector(".menu-list").classList.toggle("show-list")
-        setState({
-            menuHamburgerShowed: !menuHamburgerShowed
-        })
+        if (window.innerWidth <= 768) {
+            document.querySelector(".menu-list").classList.toggle("show-list")
+            setState({
+                menuHamburgerShowed: !menuHamburgerShowed
+            })
+        }
     }
 
     const visualChangesTop = () => {
@@ -44,18 +48,25 @@ export const NavBar = () => {
         }
     }
 
-    // Tarea: Amarrar el handleEvent al url products o /
-
-    const handleEvent = () => {
-        if (window.scrollY === 0 && window.innerWidth > 768) {
-            visualChangesTop()
-        }
-        if (window.scrollY > 0 && window.innerWidth > 768) {
+    useLayoutEffect(() => {
+        if (!(pathname === '/products' || pathname === '/')) {
             visualChangesDown()
         }
-    }
-
-    window.addEventListener('scroll', handleEvent)
+        const handleEvent = () => {
+            if (pathname === '/products' || pathname === '/') {
+                if (window.scrollY === 0 && window.innerWidth > 768) {
+                    visualChangesTop()
+                }
+                if (window.scrollY > 0 && window.innerWidth > 768) {
+                    visualChangesDown()
+                }
+            }
+        }
+        window.addEventListener('scroll', handleEvent)
+        return () => {
+            window.removeEventListener('scroll', handleEvent)
+        };
+    }, [pathname])
 
     return (
         <section className="navbar">
@@ -73,12 +84,12 @@ export const NavBar = () => {
                 </div>
                 <nav>
                     <ul className="menu-list">
-                        <li><Link className="link-nav-bar" to="/products">products</Link></li>
-                        <li><Link className="link-nav-bar" to="/pricing">pricing</Link></li>
-                        <li><Link className="link-nav-bar" to="/solutions">solutions</Link></li>
-                        <li><Link className="link-nav-bar" to="/demo">demo</Link></li>
-                        <li><Link className="link-nav-bar" to="/services">services</Link></li>
-                        <li><Link to="/register"><Button id="nav-button" content="get started" /></Link></li>
+                        <li><Link className="link-nav-bar" to="/products" onClick={handleClick}>products</Link></li>
+                        <li><Link className="link-nav-bar" to="/pricing" onClick={handleClick}>pricing</Link></li>
+                        <li><Link className="link-nav-bar" to="/solutions" onClick={handleClick}>solutions</Link></li>
+                        <li><Link className="link-nav-bar" to="/demo" onClick={handleClick}>demo</Link></li>
+                        <li><Link className="link-nav-bar" to="/services" onClick={handleClick}>services</Link></li>
+                        <li><Link to="/auth/register"><Button id="nav-button" content="get started" /></Link></li>
                     </ul>
                 </nav>
             </div>

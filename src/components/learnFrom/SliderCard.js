@@ -1,7 +1,7 @@
 import React from 'react'
-import cuadrado from '../../assets/Group.svg'
-import triangulo from '../../assets/Group_6.svg'
-import circulo from '../../assets/Group_7.svg'
+import cuadrado from './../../assets/Group.svg'
+import triangulo from './../../assets/Group_6.svg'
+import circulo from './../../assets/Group_7.svg'
 
 export const SliderCard = ({ i }) => {
 

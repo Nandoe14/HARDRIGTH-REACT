@@ -1,5 +1,5 @@
 import React from 'react'
-import imgWoman from '../../assets/room-GkWrEPTyDRs-unsplash.png';
+import imgWoman from './../../assets/room-GkWrEPTyDRs-unsplash.png';
 import { GetAheadItem } from './GetAheadItem';
 import { Footer } from '../footer/Footer';
 

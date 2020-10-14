@@ -19,7 +19,7 @@ export const AuthRouter = () => {
                     path="/HARDRIGTH-REACT/auth/register"
                     component={Register}
                 />
-                <Redirect to="/auth/login" />
+                <Redirect to="/HARDRIGTH-REACT/auth/login" />
             </Switch>
         </div>
     )

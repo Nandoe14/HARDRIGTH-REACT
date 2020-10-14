@@ -52,11 +52,11 @@ export const NavBar = () => {
     }
 
     useLayoutEffect(() => {
-        if (!(pathname === '/products' || pathname === '/')) {
+        if (!(pathname === '/HARDRIGTH-REACT/products' || pathname === '/HARDRIGTH-REACT/' || pathname === '/')) {
             visualChangesDown()
         }
         const handleEvent = () => {
-            if (pathname === '/products' || pathname === '/') {
+            if (pathname === '/HARDRIGTH-REACT/products' || pathname === '/HARDRIGTH-REACT/') {
                 if (window.scrollY === 0 && window.innerWidth > 768) {
                     visualChangesTop()
                 }
@@ -72,7 +72,7 @@ export const NavBar = () => {
     }, [pathname])
 
     return (
-        <section className="navbar animate__animated animate__bounceInDown">
+        <section className="navbar">
             <div className="container1">
                 <div className="logos-cont">
                     <img id="logo-white" className="" src={logo1} alt="HARDRIGTH" />

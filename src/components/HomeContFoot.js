@@ -2,6 +2,7 @@ import React from 'react'
 import { ContactUs } from './contactUs/ContactUs'
 import { Footer } from './footer/Footer'
 import { Header } from './header/Header'
+import { NavBar } from './navBar/NavBar'
 
 export const HomeContFoot = () => {
 
@@ -9,6 +10,7 @@ export const HomeContFoot = () => {
 
     return (
         <>
+            <NavBar />
             <Header />
             <ContactUs />
             <Footer />

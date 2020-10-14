@@ -9,7 +9,6 @@ import { useDispatch } from 'react-redux';
 import { firebase } from '../firebase/firebase-config'
 import { GetAhead } from '../components/getAhead/GetAhead';
 import { HomeContFoot } from '../components/HomeContFoot';
-import { NavBar } from '../components/navBar/NavBar';
 import { login } from '../actions/auth';
 import { AuthRouter } from './AuthRouter';
 import { PublicRoute } from './PublicRoute';
@@ -47,7 +46,6 @@ export const AppRouter = () => {
     return (
         <Router>
             <div>
-                <NavBar />
                 <Switch>
                     <Route exact path="/HARDRIGTH-REACT/" component={HomeContFoot} />
                     <Route exact path="/HARDRIGTH-REACT/products" component={HomeContFoot} />

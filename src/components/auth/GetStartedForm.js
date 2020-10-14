@@ -12,12 +12,12 @@ export const GetStartedForm = () => {
     const dispatch = useDispatch()
 
     const [formValues, handleInputChange] = useForm({
-        name: 'Hernando',
-        lastname: 'Carbonell',
-        email: 'nandoe@gmail.com',
-        phone: '333333333',
-        password: 'abc123',
-        password2: 'abc123'
+        name: '',
+        lastname: '',
+        email: '',
+        phone: '',
+        password: '',
+        password2: ''
     })
 
     const { name, lastname, email, phone, password, password2 } = formValues

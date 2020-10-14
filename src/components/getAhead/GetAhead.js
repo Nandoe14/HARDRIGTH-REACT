@@ -2,6 +2,7 @@ import React from 'react'
 import imgWoman from './../../assets/room-GkWrEPTyDRs-unsplash.png';
 import { GetAheadItem } from './GetAheadItem';
 import { Footer } from '../footer/Footer';
+import { NavBar } from '../navBar/NavBar';
 
 export const GetAhead = () => {
 
@@ -11,6 +12,7 @@ export const GetAhead = () => {
 
     return (
         <>
+            <NavBar />
             <section className="getahead">
                 <img className="animate__animated animate__slideInDown animate__faster" src={imgWoman} alt="imgWoman" />
                 <div className="gacont animate__animated animate__slideInRight animate__faster">

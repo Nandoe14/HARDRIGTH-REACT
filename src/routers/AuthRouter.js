@@ -2,10 +2,12 @@ import React from 'react'
 import { Redirect, Route, Switch } from 'react-router-dom'
 import { Login } from '../components/auth/Login'
 import { Register } from '../components/auth/Register'
+import { NavBar } from '../components/navBar/NavBar'
 
 export const AuthRouter = () => {
     return (
         <div>
+            <NavBar />
             <Switch>
                 <Route
                     exact

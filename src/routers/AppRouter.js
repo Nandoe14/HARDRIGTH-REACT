@@ -49,14 +49,14 @@ export const AppRouter = () => {
             <div>
                 <NavBar />
                 <Switch>
-                    <Route exact path="/" component={HomeContFoot} />
-                    <Route exact path="/products" component={HomeContFoot} />
-                    <Route exact path="/pricing" component={GetAhead} />
+                    <Route exact path="/HARDRIGTH-REACT/" component={HomeContFoot} />
+                    <Route exact path="/HARDRIGTH-REACT/products" component={HomeContFoot} />
+                    <Route exact path="/HARDRIGTH-REACT/pricing" component={GetAhead} />
 
-                    <PrivateRoute path="/ocult" component={OcultRouter} isAuthenticated={isLoggedIn} />
-                    <PublicRoute path="/auth" component={AuthRouter} isAuthenticated={isLoggedIn} />
+                    <PrivateRoute path="/HARDRIGTH-REACT/ocult" component={OcultRouter} isAuthenticated={isLoggedIn} />
+                    <PublicRoute path="/HARDRIGTH-REACT/auth" component={AuthRouter} isAuthenticated={isLoggedIn} />
 
-                    <Redirect to="/" />
+                    <Redirect to="/HARDRIGTH-REACT/" />
                 </Switch>
             </div >
         </Router >

@@ -77,7 +77,7 @@ export const Login = () => {
                     </div>
 
                     <Link
-                        to="/auth/register"
+                        to="/HARDRIGTH-REACT/auth/register"
                         className="link"
                     >
                         Create new account

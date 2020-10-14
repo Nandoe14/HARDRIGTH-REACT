@@ -87,12 +87,12 @@ export const NavBar = () => {
                 </div>
                 <nav>
                     <ul className="menu-list">
-                        <li><Link className="link-nav-bar" to="/products" onClick={handleClick}>products</Link></li>
-                        <li><Link className="link-nav-bar" to="/pricing" onClick={handleClick}>pricing</Link></li>
-                        <li><Link className="link-nav-bar" to="/ocult/solutions" onClick={handleClick}>solutions</Link></li>
-                        <li><Link className="link-nav-bar" to="/ocult/demo" onClick={handleClick}>demo</Link></li>
-                        <li><Link className="link-nav-bar" to="/ocult/services" onClick={handleClick}>services</Link></li>
-                        <li><Link to="/auth/register"><Button id="nav-button" content={`${(name) ? name : 'get started'}`} /></Link></li>
+                        <li><Link className="link-nav-bar" to="/HARDRIGTH-REACT/products" onClick={handleClick}>products</Link></li>
+                        <li><Link className="link-nav-bar" to="/HARDRIGTH-REACT/pricing" onClick={handleClick}>pricing</Link></li>
+                        <li><Link className="link-nav-bar" to="/HARDRIGTH-REACT/ocult/solutions" onClick={handleClick}>solutions</Link></li>
+                        <li><Link className="link-nav-bar" to="/HARDRIGTH-REACT/ocult/demo" onClick={handleClick}>demo</Link></li>
+                        <li><Link className="link-nav-bar" to="/HARDRIGTH-REACT/ocult/services" onClick={handleClick}>services</Link></li>
+                        <li><Link to="/HARDRIGTH-REACT/auth/register"><Button id="nav-button" content={`${(name) ? name : 'get started'}`} /></Link></li>
                     </ul>
                 </nav>
             </div>

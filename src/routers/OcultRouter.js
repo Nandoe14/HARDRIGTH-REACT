@@ -8,9 +8,9 @@ export const OcultRouter = () => {
     return (
         <div>
             <Switch>
-                <Route exact path="/ocult/solutions" component={SeeWhere} />
-                <Route exact path="/ocult/demo" component={LearnFrom} />
-                <Route exact path="/ocult/services" component={SeeWhereVideo} />
+                <Route exact path="/HARDRIGTH-REACT/ocult/solutions" component={SeeWhere} />
+                <Route exact path="/HARDRIGTH-REACT/ocult/demo" component={LearnFrom} />
+                <Route exact path="/HARDRIGTH-REACT/ocult/services" component={SeeWhereVideo} />
             </Switch>
         </div>
     )

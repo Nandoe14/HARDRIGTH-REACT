@@ -41,12 +41,12 @@ export const Footer = () => {
                                 &&
                                 <Link
                                     className="link-login"
-                                    to="/auth/login"
+                                    to="/HARDRIGTH-REACT/auth/login"
                                 ><span className="login">Login</span></Link>
                             }
 
                             <Link
-                                to="/auth/register"
+                                to="/HARDRIGTH-REACT/auth/register"
                             ><Button id="footer-button" content="get started" /></Link>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ export const Footer = () => {
                                 &&
                                 <Link
                                     className="link-login"
-                                    to="/auth/login"
+                                    to="/HARDRIGTH-REACT/auth/login"
                                     onClick={handleLogout}
                                 ><span className="logout">Logout</span></Link>
                             }

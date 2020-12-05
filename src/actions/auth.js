@@ -12,7 +12,6 @@ export const startLoginEmailPassword = (email, password) => {
                 dispatch(finishLoading())
             })
             .catch(e => {
-                console.log(e)
                 dispatch(finishLoading())
                 Swal.fire({
                     title: 'Error!',
@@ -33,7 +32,6 @@ export const startRegisterWithEmailPasswordName = (email, password, name) => {
                 dispatch(login(user.uid, user.displayName))
             })
             .catch(e => {
-                console.log(e)
                 Swal.fire({
                     title: 'Error!',
                     text: e.message,

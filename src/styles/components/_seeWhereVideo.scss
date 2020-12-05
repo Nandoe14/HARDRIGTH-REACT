@@ -53,14 +53,13 @@ section.seewherevideo {
         display: grid;
         height: 100%;
         margin: auto;
-        width: 1069px;
+        max-width: 1069px;
     }
 }
 
 .contdivvideo {
-    height: 601px;
+    width: 100%;
     position: relative;
-    width: 1069px;
 
     img {
         cursor: pointer;
@@ -77,6 +76,15 @@ section.seewherevideo {
             transform: scale(0.9);
         }
     }
+
+    iframe {
+        box-sizing: border-box;
+        height: 82vh;
+        max-width: 1069px;
+        max-height: 601px;
+        padding: 0 20px;
+        width: 100%;
+    }
 }
 
 
@@ -88,29 +96,29 @@ section.seewherevideo {
         height: 681px;
 
         .p2 {
-            width: 636px;
+            max-width: 636px;
         }
     }
 
     .videosw {
         height: 299px;
-        width: 644px;
+        max-width: 644px;
     }
 
     .videout > div {
         height: 100%;
         margin: auto;
-        width: 644px;
+        max-width: 644px;
     }
     
     .contdivvideo {
-        height: 299px;
-        width: 644px;
+        max-width: 644px;
     }
 
     #videoiframe {
-        height: 299px;
-        width: 644px;
+        height: 50vw;
+        max-height: 299px;
+        max-width: 644px;
     }
     
 }
@@ -118,7 +126,7 @@ section.seewherevideo {
 
 /* Estilos dispositivos Res: MAx 320px */
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 423px) {
     
     section.seewherevideo {
         height: 510px;
@@ -151,7 +159,6 @@ section.seewherevideo {
 
     .contdivvideo {
         height: 200px;
-        width: 320px;
     }
 
     #videoiframe {

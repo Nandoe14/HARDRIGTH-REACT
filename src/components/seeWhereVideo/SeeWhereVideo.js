@@ -32,7 +32,7 @@ export const SeeWhereVideo = () => {
                         <div>
                             <div className="contdivvideo">
                                 <img src={closeVideo} alt="X" />
-                                <iframe className="animate__animated animate__backInDown" id="videoiframe" src="https://player.vimeo.com/video/95746815" width="1069" height="601" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="Video"></iframe>
+                                <iframe className="animate__animated animate__backInDown" id="videoiframe" src="https://www.youtube.com/embed/Cl_kXbhTi8k" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen title="Video"></iframe>
                             </div>
                         </div>
                     </div>)

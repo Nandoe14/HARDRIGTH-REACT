@@ -33,6 +33,7 @@ section.learnfrom {
 }
 
 .card-slider {
+    background-color: white;
     border: 1px solid rgba(198, 201, 210, 0.387183);
     border-radius: 6px;
     box-shadow: 0px 1px 4px $white2;
@@ -40,8 +41,10 @@ section.learnfrom {
     height: 496px;
     max-width: 335px;
     min-width: 250px;
+    position: relative;
     transition: all 0.3s linear;
     transform: scale(1);
+    z-index: 1;
 }
 
 .slide h3 {
@@ -114,6 +117,7 @@ section.learnfrom {
     .slide-selected {
         box-shadow: 0px 2px 20px $white2!important;
         transform: scale(1.02)!important;
+        z-index: 2;
     }
 }
 
@@ -134,19 +138,22 @@ section.learnfrom {
 @media only screen and (max-width: 768px) {
 
     section.learnfrom .p1 {
-        width: 508px;
+        max-width: 508px;
+        width: unset;
     }
 
     .slide {
         height: 496px;
         margin-bottom: 70px;
-        width: 382px;
+        max-width: 382px;
+        width: unset;
     }
     
     .cont {
         margin: auto;
         position: relative;
-        width: 382px;
+        max-width: 382px;
+        width: unset;
     }
     
     .slide .card-slider {
@@ -158,7 +165,8 @@ section.learnfrom {
         top: 26px;
         transform: none !important;
         transition: none;
-        width: 335px;
+        max-width: 335px;
+        width: unset;
     }
 
     .btnld {

@@ -2,13 +2,13 @@
 header {
     background-image: url('./../../assets/Photo_above_the_fold.png');
     background-size: cover;
-    height: 680px;
     width: 100%;
 }
 
 .headcont {
-    padding: 200px 0 0 180px;
-    width: 518px;
+    padding: 200px 0 122px 180px;
+    margin-right: 20px;
+    max-width: 518px;
 
     h1 {
         margin-bottom: 22px;
@@ -20,10 +20,9 @@ header {
 
     p {
         color: $white;
-        height: 123px;
         font-size: 16px;
         line-height: 22px;
-        margin-bottom: 42px;
+        margin-bottom: 57px;
     }
 
     button.general {
@@ -38,12 +37,11 @@ header {
 @media only screen and (max-width: 768px) {
 
     header {
-        height: 718px;
         background-position: 94% 100%;
     }
 
     .headcont {
-        padding: 200px 0 0 62px;
+        padding: 200px 0 122px 62px;
     }
 
     .headcont p {

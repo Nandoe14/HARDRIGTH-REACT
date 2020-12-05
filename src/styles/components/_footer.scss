@@ -27,7 +27,6 @@ footer {
     ul {
         list-style: none;
         min-width: 82px;
-        padding-right: 10px;
     }
 }
 
@@ -184,9 +183,14 @@ footer .container1 > img {
     footer {
         background: $white3;
         height: 411px;
+        padding: 0;
     
         hr {
             display: none;
+        }
+
+        .container1 {
+            max-width: 624px;
         }
     }
 
@@ -197,7 +201,7 @@ footer .container1 > img {
 
     .footer-table {
         padding: 0 0 98px 0;
-        width: unset;
+        width: 100%;
     }
 
     .footer-auth {
@@ -213,20 +217,26 @@ footer .container1 > img {
         bottom: 96px;
         left: 0;
     }
+
+    .social {
+        width: 100%;
+    }
 }
 
 
 /* Estilos dispositivos Res: MAx 320px */
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 423px) {
     
     footer {
         box-sizing: border-box;
         display: block;
         height: 670px;
-        margin: auto;
         padding: 0;
-        width: 300px;
+
+        .container1 {
+            width: 300px;
+        }
     }
     
     .footer-table {
@@ -267,13 +277,28 @@ footer .container1 > img {
     }
 
     .legals-cont > div {
-        align-items: end;
+        display: block;
+        width: 78%;
+        float: right;
         height: 62px;
-        padding-left: 79px;
-        width: unset;
+    }
 
-        span:first-child {
-            width: 110px;
+    .legals-cont {
+        display: block;
+        width: 100%;
+
+        span {
+            height: 100%;
+            display: inline-flex;
+            vertical-align: middle;
+            align-items: flex-end;
+        }
+
+        a {
+            height: 100%;
+            display: inline-flex;
+            vertical-align: middle;
+            align-items: flex-end;
         }
     }
 

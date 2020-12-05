@@ -10,7 +10,7 @@ section.contactus {
     margin: auto;
     padding-top: 82px;
     position: relative;
-    width: 345px;
+    max-width: 345px;
 
     > img {
         cursor: pointer;
@@ -28,15 +28,13 @@ section.contactus {
     height: 88px;
     margin-bottom: 15px;
     position: relative;
-    width: 345px;
-    
-    > img {
-        float: left;
-        margin: 27px;
+    max-width: 345px;
+
+    span {
+        display: block;
     }
 
-    > span:first-of-type {
-        float: left;
+    span:first-of-type {
         font-size: 14px;
         font-weight: bold;
         letter-spacing: 0.2px;
@@ -45,9 +43,22 @@ section.contactus {
         width: 250px;
     }
 
-    > span:last-of-type {
+    span:last-of-type {
         font-size: 14px;
         letter-spacing: 0.2px;
+    }
+}
+
+.fields-cont {
+    display: flex;
+    height: 100%;
+
+    > div:first-child {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        width: 37%;
     }
 }
 
@@ -58,7 +69,7 @@ section.contactus {
     left: 165px;
     height: 0;
     position: absolute;
-    top: 87px;
+    top: 88px;
     width: 0;
 }
 
@@ -80,18 +91,12 @@ section.contactus {
     box-shadow: 0px 4px 30px $white2;
     height: 738px;
     margin: auto;
-    width: 701px;
+    max-width: 701px;
 }
 
 #contact > div {
     margin: auto;
-    width: 582px;
-}
-
-#contact h2 {
-    padding: 44px 0 10px 0;
-    text-align: center;
-    text-transform: capitalize;
+    max-width: 582px;
 }
 
 #contact > div > span {
@@ -100,6 +105,12 @@ section.contactus {
     font-size: 16px;
     line-height: 24px;
     text-align: center;
+}
+
+#contact h2 {
+    padding: 44px 0 10px 0;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 #contact input[type="text"], #contact input[type="tel"] {
@@ -165,7 +176,8 @@ section.contactus {
 
 button.general {
     height: 50px;
-    width: 582px;
+    min-width: 100%;
+    max-width: 582px;
 }
 
 
@@ -221,7 +233,7 @@ button.general {
     }
 
     #contact {
-        width: 643px;
+        max-width: 643px;
     }
 
 }

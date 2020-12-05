@@ -18,10 +18,16 @@ export const ContactUs = () => {
                     (state)
                     &&
                     (<div className="fields animate__animated animate__bounceIn">
-                        <img src={logo} alt="H" />
-                        <span>fields court station road</span>
-                        <span>Epworth DN9 1JZ - United Kingdom Company Reg: 8202467</span>
-                        <div className="triangulo"></div>
+                        <div className="fields-cont">
+                            <div>
+                                <img src={logo} alt="H" />
+                            </div>
+                            <div>
+                                <span>fields court station road</span>
+                                <span>Epworth DN9 1JZ - United Kingdom Company Reg: 8202467</span>
+                            </div>
+                            <div className="triangulo"></div>
+                        </div>
                     </div>)
                 }
                 <img className="popup" src={circlePop} alt="O" />

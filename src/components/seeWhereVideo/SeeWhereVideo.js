@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import playVideo from './../../assets/Group_4.svg'
 import closeVideo from './../../assets/close_icon.png'
 import { Footer } from '../footer/Footer'
@@ -11,7 +11,9 @@ export const SeeWhereVideo = () => {
         setState(!state)
     }
 
-    window.scrollTo(0, 0);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     return (
         <>
@@ -32,7 +34,7 @@ export const SeeWhereVideo = () => {
                         <div>
                             <div className="contdivvideo">
                                 <img src={closeVideo} alt="X" />
-                                <iframe className="animate__animated animate__backInDown" id="videoiframe" src="https://www.youtube.com/embed/Cl_kXbhTi8k" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen title="Video"></iframe>
+                                <iframe className="animate__animated animate__backInDown" id="videoiframe" src="https://www.youtube.com/embed/Cl_kXbhTi8k?rel=0&amp;autoplay=1&amp;start=6" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen title="Video"></iframe>
                             </div>
                         </div>
                     </div>)

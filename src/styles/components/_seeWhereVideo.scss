@@ -4,7 +4,7 @@ section.seewherevideo {
     
     h2 {
         margin-bottom: 20px;
-        padding-top: 100px;
+        padding-top: 130px;
         text-align: center;
     }
     
@@ -46,7 +46,7 @@ section.seewherevideo {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 999;
 
     > div {
         align-items: center;

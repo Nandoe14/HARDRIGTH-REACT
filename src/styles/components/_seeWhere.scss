@@ -10,16 +10,7 @@ section.seewhere {
     }
     
     .p2 {
-        margin-bottom: 27px;
-    }
-    
-    > div > span {
-        font-size: 14px;
-        line-height: 32px;
-        display: inline-block;
-        text-transform: capitalize;
-        color: $blue1;
-        margin: 0 0 5px 80px;
+        margin-bottom: 63px;
     }
 }
 
@@ -36,6 +27,17 @@ section.seewhere {
     margin: auto;
     position: relative;
     max-width: 531px;
+
+    > span {
+        position: absolute;
+        top: -37px;
+        left: -6px;
+        font-size: 14px;
+        line-height: 32px;
+        display: inline-block;
+        text-transform: capitalize;
+        color: $blue1;
+    }
 }
 
 .divhouse, .divrow {
@@ -141,6 +143,10 @@ section.seewhere {
         padding: 0 10px;
     }
 
+    .industry-select > span {
+        left: 6px;
+    }
+
 }
 
 
@@ -165,11 +171,6 @@ section.seewhere {
             font-size: 14px;
             line-height: 16px;
             margin: 0 auto 40px auto;
-        }
-
-        > div > span {
-            text-align: left;
-            margin: 0 0 5px 10px;
         }
     }
 

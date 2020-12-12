@@ -92,6 +92,12 @@ section.contactus {
     height: 738px;
     margin: auto;
     max-width: 701px;
+
+    button {
+        height: 50px;
+        min-width: 100%;
+        max-width: 582px;
+    }
 }
 
 #contact > div {
@@ -172,12 +178,6 @@ section.contactus {
 
 #contact hr:last-of-type {
     margin-bottom: 83px;
-}
-
-button.general {
-    height: 50px;
-    min-width: 100%;
-    max-width: 582px;
 }
 
 

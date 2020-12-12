@@ -1,7 +1,6 @@
 section.learnfrom {
     background-color: $white;
-    height: 853px;
-    padding-top: 130px;
+    padding: 130px 0 26px 0;
 
     h2 {
         margin-bottom: 20px;
@@ -137,9 +136,13 @@ section.learnfrom {
 
 @media only screen and (max-width: 768px) {
 
-    section.learnfrom .p1 {
-        max-width: 508px;
-        width: unset;
+    section.learnfrom {
+        padding: 130px 0 58px 0;
+        
+        .p1 {
+            max-width: 508px;
+            width: unset;
+        }
     }
 
     .slide {

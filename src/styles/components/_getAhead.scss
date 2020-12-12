@@ -14,7 +14,6 @@ section.getahead {
     }
 
     .gacont {
-        height: 255px;
         max-width: 450px;
         min-width: 283px;
         padding: 135px 10px 0 720px;
@@ -159,13 +158,13 @@ section.getahead {
 
         .gacont {
             margin: auto;
-            padding: 64px 0 0 0;
+            padding: 64px 0 70px 0;
+            max-width: 507px;
             text-align: center;
-            width: 507px;
             
             h2 {
                 width: unset;
-                height: 48px;
+                height: unset;
                 margin: 0 auto 20px auto;   
             }
         }

@@ -46,8 +46,16 @@ export const Footer = () => {
                             }
 
                             <Link
-                                to="/HARDRIGTH-REACT/auth/register"
-                            ><Button id="footer-button" content="get started" /></Link>
+                                to={(!name) ? "/HARDRIGTH-REACT/auth/register" : "/HARDRIGTH-REACT/auth/login"}
+                                onClick={(name) && handleLogout}
+                            >
+                                <Button
+                                    id="footer-button"
+                                    classs={`general ${(name) && "logout"}`}
+                                    content={(!name) ? "get started" : "logout"}
+                                />
+                            </Link>
+
                         </div>
                     </div>
                 </div>
@@ -59,15 +67,7 @@ export const Footer = () => {
                         <div>
                             <span><a href="#a">HardRigth.io, Inc.</a></span>
                             <span><a href="#a">Terms</a></span>
-                            {
-                                (name)
-                                &&
-                                <Link
-                                    className="link-login"
-                                    to="/HARDRIGTH-REACT/auth/login"
-                                    onClick={handleLogout}
-                                ><span className="logout">Logout</span></Link>
-                            }
+                            <span><a href="#a">Privacy</a></span>
                         </div>
                     </div>
                     <div className="social-cont">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useFormWithFilter } from '../../hooks/useFormWithFilter';
 import { Footer } from '../footer/Footer';
 import house from './../../assets/home.svg';
@@ -47,7 +47,9 @@ export const SeeWhere = () => {
         reset()
     }
 
-    window.scrollTo(0, 0);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     return (
         <>
@@ -55,9 +57,9 @@ export const SeeWhere = () => {
                 <div className="container2">
                     <h2>See where you stand</h2>
                     <p className="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                    <span>industry</span>
 
                     <div className="industry-select">
+                        <span>industry</span>
                         <div className="divhouse">
                             <img className="animate__animated animate__tada" src={house} alt="" />
                         </div>

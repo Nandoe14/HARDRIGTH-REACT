@@ -28,30 +28,20 @@ This project works using Hooks from React, Redux, Router and Custom.
 | `useForm`           | 3          | ContactForm, GetStartedForm, Login |
 | `useFormWithFilter` | 1          | SeeWhere                           |
 | `useCounter`        | 1          | Slider                             |
-
 These custom hooks have implemented the `useState` React-Hook
 
 #### All used hooks list per component
 
-| Component (js) | Used hooks (React)            | U.h. (React-Redux)           | U.h. (React-Router-Dom) | U.h. (Custom)       |
-|----------------|-------------------------------|------------------------------|-------------------------|---------------------|
-| AppRouter      | `useState`, `useEffect`       | `useDispatch`                | -                       | `useCounter`        |
-| ContactForm    | -                             | -                            | -                       | `useForm`           |
-| ContactUs      | `useState`                    | -                            | -                       | -                   |
-| Footer         | -                             | `useDispatch`, `useSelector` | -                       | -                   |
-| GetStartedForm | -                             | `useDispatch`                | -                       | `useForm`           |
-| Login          | -                             | `useDispatch`, `useSelector` | -                       | `useForm`           |
-| NavBar         | `useState`, `useLayoutEffect` | `useSelector`                | `useLocation`           | -                   |
-| SeeWhere       | `useState`, `useEffect`       | -                            | -                       | `useFormWithFilter` |
-| SeeWhereVideo  | `useState`, `useEffect`       | -                            | -                       | -                   |
-| Slider         | -                             | -                            | -                       | `useCounter`        |
-
-
-
-
-
-
-
-
-
+| Component (js) | Used hooks (React)            | U.h. (React-Redux)           | U.h. (React-Router) | U.h. (Custom)       |
+|----------------|-------------------------------|------------------------------|---------------------|---------------------|
+| AppRouter      | `useState`, `useEffect`       | `useDispatch`                | -                   | `useCounter`        |
+| ContactForm    | -                             | -                            | -                   | `useForm`           |
+| ContactUs      | `useState`                    | -                            | -                   | -                   |
+| Footer         | -                             | `useDispatch`, `useSelector` | -                   | -                   |
+| GetStartedForm | -                             | `useDispatch`                | -                   | `useForm`           |
+| Login          | -                             | `useDispatch`, `useSelector` | -                   | `useForm`           |
+| NavBar         | `useState`, `useLayoutEffect` | `useSelector`                | `useLocation`       | -                   |
+| SeeWhere       | `useState`, `useEffect`       | -                            | -                   | `useFormWithFilter` |
+| SeeWhereVideo  | `useState`, `useEffect`       | -                            | -                   | -                   |
+| Slider         | -                             | -                            | -                   | `useCounter`        |
 

@@ -1,6 +1,6 @@
 ## :link: Link to *GitHub Pages*
 
-This project was uploaded on GitHub Pages as follows: [https://nandoe14.github.io/HARDRIGTH-REACT/](https://nandoe14.github.io/HARDRIGTH-REACT).
+This project was uploaded on GitHub Pages as follows: [https://nandoe14.github.io/HARDRIGTH-REACT](https://nandoe14.github.io/HARDRIGTH-REACT).
 
 ## Created with React App
 

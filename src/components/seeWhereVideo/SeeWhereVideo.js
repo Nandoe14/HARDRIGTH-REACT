@@ -34,7 +34,7 @@ export const SeeWhereVideo = () => {
                         <div>
                             <div className="contdivvideo">
                                 <img src={closeVideo} alt="X" />
-                                <iframe className="animate__animated animate__backInDown" id="videoiframe" src="https://www.youtube.com/embed/Cl_kXbhTi8k?rel=0&amp;autoplay=1&amp;start=6" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen title="Video"></iframe>
+                                <iframe className="animate__animated animate__backInDown" id="videoiframe" src="https://www.youtube.com/embed/8Akb1t37T4E?rel=0&amp;autoplay=1&amp;start=130" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen title="Video"></iframe>
                             </div>
                         </div>
                     </div>)

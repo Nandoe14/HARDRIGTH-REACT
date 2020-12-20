@@ -12,13 +12,13 @@ section.getcare {
     border: 1px solid rgba(198, 201, 210, 0.387183);
     border-radius: 6px;
     background: $white;
-    height: 738px;
-    width: 701px;
+    max-width: 701px;
+    padding: 0 65px;
 }
 
 .info-cont {
     margin: auto;
-    width: 582px;
+    max-width: 582px;
 
     h2 {
         padding: 44px 0 10px 0;
@@ -34,7 +34,7 @@ section.getcare {
         margin: auto;
         padding-bottom: 52px;
         text-align: center;
-        width: 452px;
+        max-width: 452px;
     }
 }
 
@@ -81,7 +81,9 @@ section.getcare {
 }
 
 .form-info button {
-    margin-top: 15px;
+    height: 50px;
+    margin: 15px 0 44px 0;
+    width: 100%;
 }
 
 
@@ -90,12 +92,12 @@ section.getcare {
 @media only screen and (max-width: 768px) {
 
     .form-box {
-        height: 952px;
-        width: 644px;
+        max-width: 644px;
+        padding: 0px 40px;
     }
 
     .info-cont {
-        width: 516px;
+        max-width: 516px;
 
         h2 {
             padding-top: 52px;
@@ -107,10 +109,6 @@ section.getcare {
         margin: 0;
         width: 100%;
     }
-
-    .form-info button {
-        width: 100%;
-    }
 }
 
 
@@ -119,12 +117,11 @@ section.getcare {
 @media only screen and (max-width: 320px) {
     
     .form-box {
-        height: 974px;
-        width: 290px;
+        max-width: 290px;
     }
 
     .info-cont {
-        width: 249px;
+        max-width: 249px;
 
         h2 {
             font-size: 28px;
@@ -135,7 +132,7 @@ section.getcare {
         > div > span {
             font-size: 14px;
             padding-bottom: 40px;
-            width: 242px;
+            max-width: 242px;
         }
     }
 }
